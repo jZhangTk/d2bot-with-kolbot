@@ -1531,6 +1531,7 @@ MainLoop:
 			items = Storage.Inventory.Compare(Config.Inventory);
 
 		if (items) {
+			var madeNewTab = false;
 			for (i = 0; i < items.length; i += 1) {
 				if (this.canStash(items[i])) {
 					result = (Pickit.checkItem(items[i]).result > 0 && Pickit.checkItem(items[i]).result < 4) || Cubing.keepItem(items[i]) || Runewords.keepItem(items[i]) || CraftingSystem.keepItem(items[i]);
@@ -1545,6 +1546,14 @@ MainLoop:
 					}
 
 					if (result) {
+						// PlugY stash routine for creating stash pages as needed
+						if (!madeNewTab && !Storage.Stash.CanFit(items[i])) {
+							say("/insertpage");
+							say("/swap 1");
+							madeNewTab = true;
+							Misc.itemLogger("Created new stash tab");
+						}
+
 						Misc.itemLogger("Stashed", items[i]);
 						Storage.Stash.MoveTo(items[i]);
 					}
