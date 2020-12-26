@@ -1509,7 +1509,7 @@ MainLoop:
 	canStash: function (item) {
 		var ignoredClassids = [91, 174]; // Some quest items that have to be in inventory or equipped
 
-		if (this.ignoredItemTypes.indexOf(item.itemType) > -1 || ignoredClassids.indexOf(item.classid) > -1 || !Storage.Stash.CanFit(item)) {
+		if (this.ignoredItemTypes.indexOf(item.itemType) > -1 || ignoredClassids.indexOf(item.classid) > -1) {
 			return false;
 		}
 
@@ -1531,7 +1531,6 @@ MainLoop:
 			items = Storage.Inventory.Compare(Config.Inventory);
 
 		if (items) {
-			var madeNewTab = false;
 			for (i = 0; i < items.length; i += 1) {
 				if (this.canStash(items[i])) {
 					result = (Pickit.checkItem(items[i]).result > 0 && Pickit.checkItem(items[i]).result < 4) || Cubing.keepItem(items[i]) || Runewords.keepItem(items[i]) || CraftingSystem.keepItem(items[i]);
@@ -1547,10 +1546,10 @@ MainLoop:
 
 					if (result) {
 						// PlugY stash routine for creating stash pages as needed
-						if (!madeNewTab && !Storage.Stash.CanFit(items[i])) {
+						if (!Storage.Stash.CanFit(items[i])) {
 							say("/insertpage");
-							say("/swap 1");
-							madeNewTab = true;
+							say("/swap 1"); // page 1 is blank, current page is full
+							say("/insertpage"); // insert a blank page 3 for stash
 							Misc.itemLogger("Created new stash tab");
 						}
 
