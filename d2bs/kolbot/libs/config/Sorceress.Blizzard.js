@@ -269,7 +269,7 @@ function LoadConfig() {
 	 */
 	Config.BeltColumn[0] = "mp";
 	Config.BeltColumn[1] = "hp";
-	Config.BeltColumn[2] = "hp";
+	Config.BeltColumn[2] = "rv";
 	Config.BeltColumn[3] = "rv";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
@@ -277,7 +277,7 @@ function LoadConfig() {
 	 */
 	Config.MinColumn[0] = 4;
 	Config.MinColumn[1] = 4;
-	Config.MinColumn[2] = 4;
+	Config.MinColumn[2] = 0;
 	Config.MinColumn[3] = 0;
 
 	// Pickit config. Default folder is kolbot/pickit.
@@ -346,7 +346,7 @@ function LoadConfig() {
 	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
-	Config.Cubing = true; // Set to true to enable cubing.
+	Config.Cubing = false; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
