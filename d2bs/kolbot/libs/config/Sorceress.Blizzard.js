@@ -491,11 +491,11 @@ function LoadConfig() {
 	Config.AttackSkill[3] = 59; // Primary skill to others.
 	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = 42; // Secondary skill if monster is immune to primary.
-	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
+	Config.AttackSkill[6] = 43; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
 	Config.LowManaSkill[0] = 43; // Timed low mana skill.
-	Config.LowManaSkill[1] = 43; // Untimed low mana skill.
+	Config.LowManaSkill[1] = -1; // Untimed low mana skill.
 
 	/* Advanced Attack config. Allows custom skills to be used on custom monsters.
 	 *	Format: "Monster Name": [timed skill id, untimed skill id]
@@ -507,7 +507,7 @@ function LoadConfig() {
 	};
 
 	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 15; // Distance to keep from monsters.
+	Config.DodgeRange = 5; // Distance to keep from monsters.
 	Config.DodgeHP = 80; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
@@ -517,8 +517,14 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.CastStatic = 60; // Cast static until the target is at designated life percent. 100 = disabled.
-	Config.StaticList = ["Andariel", "Duriel", "Mephisto", "Diablo", "Baal"]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
+	Config.CastStatic = 55; // Cast static until the target is at designated life percent. 100 = disabled.
+	Config.StaticList = [
+		"Andariel",
+		"Duriel",
+		"Mephisto",
+		"Diablo",
+		"Baal",
+	]; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
 	 * AutoSkill will automatically spend skill points and it can also allocate any prerequisite skills as required.
