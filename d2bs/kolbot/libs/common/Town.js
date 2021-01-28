@@ -1548,7 +1548,7 @@ MainLoop:
 						// PlugY stash routine for creating stash pages as needed
 						if (!Storage.Stash.CanFit(items[i])) {
 							say("/insertpage");
-							say("/swap 1"); // page 1 is blank, current page is full
+							say("/swappage 1"); // page 1 is blank, current page is full
 							say("/insertpage"); // insert a blank page 3 for stash
 							Misc.itemLogger("Created new stash tab");
 						}
