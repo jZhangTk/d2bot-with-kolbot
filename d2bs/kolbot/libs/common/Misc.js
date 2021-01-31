@@ -2175,9 +2175,9 @@ var Packet = {
 			}
 
 			sendPacket(1, 0x2f, 4, 1, 4, unit.gid);
-			delay(me.ping * 2);
+			delay(me.ping * 2 + 1);
 			sendPacket(1, 0x30, 4, 1, 4, unit.gid);
-			delay(me.ping * 2);
+			delay(me.ping * 2 + 1);
 			this.flash(me.gid);
 		}
 
