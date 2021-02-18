@@ -47,7 +47,7 @@ function LoadConfig() {
 	Scripts.BoneAsh = false;
 	Scripts.Countess = false;
 		Config.Countess.KillGhosts = false;
-	Scripts.Andariel = true;
+	Scripts.Andariel = false;
 	Scripts.Cows = false;
 
 	// *** act 2 ***
@@ -55,9 +55,9 @@ function LoadConfig() {
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // Clear all 3 levels
-	Scripts.AncientTunnels = true;
+	Scripts.AncientTunnels = false;
 		Config.AncientTunnels.OpenChest = true; // Open special chest in Lost City
-		Config.AncientTunnels.KillDarkElder = false;
+		Config.AncientTunnels.KillDarkElder = true;
 	Scripts.Summoner = false;
 		Config.Summoner.FireEye = false;
 	Scripts.Tombs = false;
@@ -70,9 +70,9 @@ function LoadConfig() {
 	Scripts.Endugu = false;
 	Scripts.Travincal = false;
 		Config.Travincal.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Mephisto = true;
+	Scripts.Mephisto = false;
 		Config.Mephisto.MoatTrick = false;
-		Config.Mephisto.KillCouncil = false;
+		Config.Mephisto.KillCouncil = true;
 		Config.Mephisto.TakeRedPortal = true;
 
 	// *** act 4 ***
@@ -83,7 +83,7 @@ function LoadConfig() {
 	Scripts.FastDiablo = false;
 	Scripts.Diablo = false;
 		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
-		Config.Diablo.Entrance = true; // Start from entrance
+		Config.Diablo.Entrance = false; // Start from entrance
 		Config.Diablo.SealWarning = "Leave the seals alone!";
 		Config.Diablo.EntranceTP = "Entrance TP up";
 		Config.Diablo.StarTP = "Star TP up";
@@ -95,8 +95,8 @@ function LoadConfig() {
 		Config.Pindleskin.UseWaypoint = false;
 		Config.Pindleskin.KillNihlathak = true;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Nihlathak = false;
-		Config.Nihlathak.ViperQuit = false; // End script if Tomb Vipers are found.
+	Scripts.Nihlathak = true;
+		Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Eldritch = false;
 		Config.Eldritch.OpenChest = true;
 		Config.Eldritch.KillShenk = true;
@@ -112,11 +112,11 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false;
-	Scripts.Baal = true;
+	Scripts.Baal = false;
 		Config.Baal.HotTPMessage = "Hot TP!";
 		Config.Baal.SafeTPMessage = "Safe TP!";
 		Config.Baal.BaalMessage = "Baal!";
-		Config.Baal.SoulQuit = false; // End script if Souls (Burning Souls) are found.
+		Config.Baal.SoulQuit = true; // End script if Souls (Burning Souls) are found.
 		Config.Baal.DollQuit = true; // End script if Dolls (Undead Soul Killers) are found.
 		Config.Baal.KillBaal = true; // Kill Baal. Leaves game after wave 5 if false.
 
@@ -196,9 +196,9 @@ function LoadConfig() {
 		Config.ShopBot.ScanIDs = [];
 		Config.ShopBot.CycleDelay = 0; // Delay between shopping cycles in milliseconds, might help with crashes.
 		Config.ShopBot.QuitOnMatch = false; // Leave game as soon as an item is shopped.
-	Scripts.ChestMania = true; // Open chests in configured areas. See sdk/areas.txt
+	Scripts.ChestMania = false; // Open chests in configured areas. See sdk/areas.txt
 		Config.ChestMania.Act1 = [13, 14, 15, 16, 18, 19]; // List of act 1 areas to open chests in
-		Config.ChestMania.Act2 = []; // List of act 2 areas to open chests in
+		Config.ChestMania.Act2 = [44, 55, 59, 65]; // List of act 2 areas to open chests in
 		Config.ChestMania.Act3 = [79, 80, 81]; // List of act 3 areas to open chests in
 		Config.ChestMania.Act4 = []; // List of act 4 areas to open chests in
 		Config.ChestMania.Act5 = [115, 116, 119, 125, 126, 127]; // List of act 5 areas to open chests in
@@ -233,9 +233,9 @@ function LoadConfig() {
 	Config.MercWatch = true; // Instant merc revive during battle.
 
 	// Potion settings
-	Config.UseHP = 75; // Drink a healing potion if life is under designated percent.
-	Config.UseRejuvHP = 40;  // Drink a rejuvenation potion if life is under designated percent.
-	Config.UseMP = 15; // Drink a mana potion if mana is under designated percent.
+	Config.UseHP = 80; // Drink a healing potion if life is under designated percent.
+	Config.UseRejuvHP = 50;  // Drink a rejuvenation potion if life is under designated percent.
+	Config.UseMP = 50; // Drink a mana potion if mana is under designated percent.
 	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
 	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
 	Config.UseMercRejuv = 20; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
@@ -244,10 +244,10 @@ function LoadConfig() {
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
 	// Chicken settings
-	Config.LifeChicken = 20; // Exit game if life is less or equal to designated percent.
+	Config.LifeChicken = 25; // Exit game if life is less or equal to designated percent.
 	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
 	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
-	Config.TownHP = 0; // Go to town if life is under designated percent.
+	Config.TownHP = 40; // Go to town if life is under designated percent.
 	Config.TownMP = 0; // Go to town if mana is under designated percent.
 
 	/* Inventory lock configuration. !!!READ CAREFULLY!!!
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [0,0,1,1,1,1,0,0,0,0];
-	Config.Inventory[1] = [0,0,1,1,1,1,0,0,0,0];
-	Config.Inventory[2] = [0,0,1,1,1,1,0,0,0,0];
-	Config.Inventory[3] = [0,0,1,1,1,1,0,0,0,0];
+	Config.Inventory[0] = [0,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[1] = [0,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[2] = [0,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[3] = [0,1,1,1,1,0,0,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -268,17 +268,17 @@ function LoadConfig() {
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "mp";
-	Config.BeltColumn[1] = "hp";
-	Config.BeltColumn[2] = "rv";
-	Config.BeltColumn[3] = "rv";
+	Config.BeltColumn[1] = "mp";
+	Config.BeltColumn[2] = "hp";
+	Config.BeltColumn[3] = "hp";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
 	 * Set rejuvenation columns to 0, because they can't be bought.
 	 */
 	Config.MinColumn[0] = 4;
 	Config.MinColumn[1] = 4;
-	Config.MinColumn[2] = 0;
-	Config.MinColumn[3] = 0;
+	Config.MinColumn[2] = 4;
+	Config.MinColumn[3] = 4;
 
 	// Pickit config. Default folder is kolbot/pickit.
 	Config.PickitFiles.push("J.nip");
@@ -429,7 +429,7 @@ function LoadConfig() {
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 1; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 0; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MaxGameTime = 60; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
@@ -449,12 +449,12 @@ function LoadConfig() {
 	Config.PrimarySlot = -1; // Set to use specific weapon slot as primary weapon slot: -1 = disabled, 0 = slot I, 1 = slot II
 
 	// Speedup config. Full packet casting is not recommended for melee skills.
-	Config.FCR = 0; // 0 - disable, 1 to 255 - set value of Faster Cast Rate.
-	Config.FHR = 0; // 0 - disable, 1 to 255 - set value of Faster Hit Recovery.
-	Config.FBR = 0; // 0 - disable, 1 to 255 - set value of Faster Block Recovery.
-	Config.IAS = 0; // 0 - disable, 1 to 255 - set value of Increased Attack Speed.
-	Config.PacketCasting = 0; // 0 = disable, 1 = packet teleport, 2 = full packet casting.
-	Config.WaypointMenu = true;
+	Config.FCR = 255; // 0 - disable, 1 to 255 - set value of Faster Cast Rate.
+	Config.FHR = 255; // 0 - disable, 1 to 255 - set value of Faster Hit Recovery.
+	Config.FBR = 255; // 0 - disable, 1 to 255 - set value of Faster Block Recovery.
+	Config.IAS = 255; // 0 - disable, 1 to 255 - set value of Increased Attack Speed.
+	Config.PacketCasting = 2; // 0 = disable, 1 = packet teleport, 2 = full packet casting.
+	Config.WaypointMenu = false;
 
 	// Anti-hostile config
 	Config.AntiHostile = false; // Enable anti-hostile.
@@ -467,7 +467,7 @@ function LoadConfig() {
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
 	Config.SoJWaitTime = 0; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
 	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
-	Config.DCloneQuit = 1; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
+	Config.DCloneQuit = 0; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
@@ -475,23 +475,23 @@ function LoadConfig() {
 	Config.SkipImmune = ["cold"];
 	// Skip enchanted monsters. Possible options: "extra strong", "extra fast", "cursed", "magic resistant", "fire enchanted", "lightning enchanted", "cold enchanted", "mana burn", "teleportation", "spectral hit", "stone skin", "multiple shots".
 	// You can combine multiple enchantments with "and", for example - "cursed and extra fast", "mana burn and extra strong and lightning enchanted"
-	Config.SkipEnchant = ["extra fast",  "mana burn"];
+	Config.SkipEnchant = ["mana burn"];
 	// Skip monsters with auras. Possible options: "fanaticism", "might", "holy fire", "blessed aim", "holy freeze", "holy shock". Conviction is bugged, don't use it.
 	Config.SkipAura = [];
 	// Uncomment the following line to always attempt to kill these bosses despite immunities and mods
-	//Config.SkipException = [getLocaleString(2851), getLocaleString(2852), getLocaleString(2853)]; // vizier, de seis, infector
+	Config.SkipException = [getLocaleString(2851), getLocaleString(2852), getLocaleString(2853)]; // vizier, de seis, infector
 
 	/* Attack config
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	Config.AttackSkill[0] = 40; // Preattack skill.
+	Config.AttackSkill[0] = -1; // Preattack skill.
 	Config.AttackSkill[1] = 59; // Primary skill to bosses.
 	Config.AttackSkill[2] = 45; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = 59; // Primary skill to others.
 	Config.AttackSkill[4] = 55; // Primary untimed skill to others. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = 42; // Secondary skill if monster is immune to primary.
-	Config.AttackSkill[6] = 43; // Secondary untimed skill if monster is immune to primary untimed.
+	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
 	// Low mana skills - these will be used if main skills can't be cast.
 	Config.LowManaSkill[0] = 43; // Timed low mana skill.
@@ -504,11 +504,12 @@ function LoadConfig() {
 	 */
 	Config.CustomAttack = {
 		//"Monster Name": [-1, -1]
+		"TheCowKing" : [-1, -1]
 	};
 
 	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 5; // Distance to keep from monsters.
-	Config.DodgeHP = 80; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
+	Config.DodgeRange = 10; // Distance to keep from monsters.
+	Config.DodgeHP = 75; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 	Config.TeleStomp = true; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
@@ -517,7 +518,7 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.CastStatic = 55; // Cast static until the target is at designated life percent. 100 = disabled.
+	Config.CastStatic = 60; // Cast static until the target is at designated life percent. 100 = disabled.
 	Config.StaticList = [
 		"Andariel",
 		"Duriel",
