@@ -988,7 +988,7 @@ ModeLoop:
 
 					tick = getTickCount();
 
-					while (getTickCount() - tick < Math.max(Math.round((i + 1) * 1000 / (i / 5 + 1)), me.ping * 2)) {
+					while (getTickCount() - tick < Math.max(Math.round((i + 10) * 1000 / (i / 5 + 1)), me.ping * 2)) {
 						if (me.area === targetArea) {
 							delay(100);
 
