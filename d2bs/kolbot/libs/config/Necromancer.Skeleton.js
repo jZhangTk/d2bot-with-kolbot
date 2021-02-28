@@ -114,7 +114,7 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false;
-	Scripts.Baal = true;
+	Scripts.Baal = false;
 		Config.Baal.HotTPMessage = "Hot TP!";
 		Config.Baal.SafeTPMessage = "Safe TP!";
 		Config.Baal.BaalMessage = "Baal!";
@@ -256,10 +256,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [0,1,1,1,1,1,1,1,1,0];
-	Config.Inventory[1] = [0,1,1,1,1,1,1,1,1,0];
-	Config.Inventory[2] = [0,1,1,1,1,1,1,1,1,0];
-	Config.Inventory[3] = [0,1,1,1,1,1,1,1,1,0];
+	Config.Inventory[0] = [0,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[1] = [0,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[2] = [0,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[3] = [0,1,1,1,1,1,0,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -346,7 +346,7 @@ function LoadConfig() {
 	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
-	Config.Cubing = false; // Set to true to enable cubing.
+	Config.Cubing = true; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
@@ -374,7 +374,7 @@ function LoadConfig() {
 	// The gems not used by other recipes will be used for magic item rerolling.
 
 	//Config.Recipes.push([Recipe.Reroll.Magic, "Diadem"]); // Reroll magic Diadem
-	//Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
+	Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
 
 	//Config.Recipes.push([Recipe.Reroll.Rare, "Diadem"]); // Reroll rare Diadem
 
@@ -467,7 +467,7 @@ function LoadConfig() {
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
 	Config.SoJWaitTime = 0; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
 	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
-	Config.DCloneQuit = 0; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
+	Config.DCloneQuit = 1; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
@@ -517,7 +517,7 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.Curse[0] = 87; // Boss curse. Use skill number or set to 0 to disable.
+	Config.Curse[0] = 66; // Boss curse. Use skill number or set to 0 to disable.
 	Config.Curse[1] = 66; // Other monsters curse. Use skill number or set to 0 to disable.
 
 	Config.ExplodeCorpses = 74; // Explode corpses. Use skill number or 0 to disable. 74 = Corpse Explosion, 83 = Poison Explosion
