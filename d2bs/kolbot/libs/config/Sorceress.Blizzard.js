@@ -248,7 +248,7 @@ function LoadConfig() {
 	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
 	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
 	Config.TownHP = 40; // Go to town if life is under designated percent.
-	Config.TownMP = 0; // Go to town if mana is under designated percent.
+	Config.TownMP = 1; // Go to town if mana is under designated percent.
 
 	/* Inventory lock configuration. !!!READ CAREFULLY!!!
 	 * 0 = item is locked and won't be moved. If item occupies more than one slot, ALL of those slots must be set to 0 to lock it in place.
@@ -268,9 +268,9 @@ function LoadConfig() {
 	 * Supported potions - Healing ("hp"), Mana ("mp") and Rejuvenation ("rv")
 	 */
 	Config.BeltColumn[0] = "mp";
-	Config.BeltColumn[1] = "mp";
+	Config.BeltColumn[1] = "hp";
 	Config.BeltColumn[2] = "hp";
-	Config.BeltColumn[3] = "hp";
+	Config.BeltColumn[3] = "rv";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
 	 * Set rejuvenation columns to 0, because they can't be bought.
@@ -278,7 +278,7 @@ function LoadConfig() {
 	Config.MinColumn[0] = 4;
 	Config.MinColumn[1] = 4;
 	Config.MinColumn[2] = 4;
-	Config.MinColumn[3] = 4;
+	Config.MinColumn[3] = 0;
 
 	// Pickit config. Default folder is kolbot/pickit.
 	Config.PickitFiles.push("J.nip");
@@ -346,7 +346,7 @@ function LoadConfig() {
 	/* Cubing config. All recipe names are available in Templates/Cubing.txt. For item names/classids check NTItemAlias.dbl
 	 * The format is Config.Recipes.push([recipe_name, item_name_or_classid, etherealness]). Etherealness is optional and only applies to some recipes.
 	 */
-	Config.Cubing = false; // Set to true to enable cubing.
+	Config.Cubing = true; // Set to true to enable cubing.
 
 	// Ingredients for the following recipes will be auto-picked, for classids check libs/NTItemAlias.dbl
 
@@ -374,7 +374,7 @@ function LoadConfig() {
 	// The gems not used by other recipes will be used for magic item rerolling.
 
 	//Config.Recipes.push([Recipe.Reroll.Magic, "Diadem"]); // Reroll magic Diadem
-	//Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
+	Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
 
 	//Config.Recipes.push([Recipe.Reroll.Rare, "Diadem"]); // Reroll rare Diadem
 
@@ -467,7 +467,7 @@ function LoadConfig() {
 	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
 	Config.SoJWaitTime = 0; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
 	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
-	Config.DCloneQuit = 0; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
+	Config.DCloneQuit = 1; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
@@ -509,7 +509,7 @@ function LoadConfig() {
 
 	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 10; // Distance to keep from monsters.
-	Config.DodgeHP = 75; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
+	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 	Config.TeleStomp = true; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
