@@ -50,7 +50,7 @@ function LoadConfig() {
 	Scripts.Countess = false;
 		Config.Countess.KillGhosts = true;
 	Scripts.Andariel = false;
-	Scripts.Cows = false;
+	Scripts.Cows = true;
 
 	// *** act 2 ***
 	Scripts.Radament = false;
@@ -95,9 +95,9 @@ function LoadConfig() {
 	// *** act 5 ***
 	Scripts.Pindleskin = false;
 		Config.Pindleskin.UseWaypoint = false;
-		Config.Pindleskin.KillNihlathak = true;
+		Config.Pindleskin.KillNihlathak = false;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Nihlathak = true;
+	Scripts.Nihlathak = false;
 		Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Eldritch = false;
 		Config.Eldritch.OpenChest = true;
@@ -114,7 +114,7 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false;
-	Scripts.Baal = false;
+	Scripts.Baal = true;
 		Config.Baal.HotTPMessage = "Hot TP!";
 		Config.Baal.SafeTPMessage = "Safe TP!";
 		Config.Baal.BaalMessage = "Baal!";
@@ -429,7 +429,7 @@ function LoadConfig() {
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 1; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 420; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MaxGameTime = 600; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
@@ -443,7 +443,7 @@ function LoadConfig() {
 	Config.ScanShrines = [15, 13, 12, 1, 3, 2];
 
 	// MF Switch
-	Config.MFSwitchPercent = 10; // Boss life % to switch to non-primiary weapon slot. Set to 0 to disable.
+	Config.MFSwitchPercent = 0; // Boss life % to switch to non-primiary weapon slot. Set to 0 to disable.
 
 	// Primary Slot - Bot will try to determine primary slot if not used (non-cta slot that's not empty)
 	Config.PrimarySlot = -1; // Set to use specific weapon slot as primary weapon slot: -1 = disabled, 0 = slot I, 1 = slot II
@@ -464,10 +464,10 @@ function LoadConfig() {
 	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted
 
 	// DClone config
-	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
+	Config.StopOnDClone = false; // Go to town and idle as soon as Diablo walks the Earth
 	Config.SoJWaitTime = 0; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
-	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
-	Config.DCloneQuit = 1; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
+	Config.KillDclone = true; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
+	Config.DCloneQuit = 0; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
@@ -485,7 +485,7 @@ function LoadConfig() {
 	 * To disable an attack, set it to -1
 	 * Skills MUST be POSITIVE numbers. For reference see http://pastebin.com/baShRwWM
 	 */
-	Config.AttackSkill[0] = -1; // Preattack skill.
+	Config.AttackSkill[0] = 68; // Preattack skill.
 	Config.AttackSkill[1] = 500; // Primary skill to bosses.
 	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
 	Config.AttackSkill[3] = 500; // Primary skill to others.
@@ -506,7 +506,7 @@ function LoadConfig() {
 		"TheCowKing" : [-1, -1]
 	};
 
-	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
+	Config.Dodge = false; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 10; // Distance to keep from monsters.
 	Config.DodgeHP = 75; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
@@ -517,7 +517,7 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.Curse[0] = 66; // Boss curse. Use skill number or set to 0 to disable.
+	Config.Curse[0] = 87; // Boss curse. Use skill number or set to 0 to disable.
 	Config.Curse[1] = 66; // Other monsters curse. Use skill number or set to 0 to disable.
 
 	Config.ExplodeCorpses = 74; // Explode corpses. Use skill number or 0 to disable. 74 = Corpse Explosion, 83 = Poison Explosion
