@@ -590,9 +590,8 @@ MainSwitch:
 		// Single Player screen fix
 		if (getLocation() === 12 && !getControl(4, 626, 100, 151, 44)) {
 			// ControlAction.click(6, 33, 572, 128, 35);
-			login(me.profile);
 
-			break;
+			// break;
 		}
 
 		if (firstLogin && getLocation() === 9) { // multiple realm botting fix in case of R/D or disconnect
@@ -629,6 +628,7 @@ MainSwitch:
 			} else {
 				me.blockKeys = false;
 				print(e + " " + getLocation());
+				D2Bot.stop();
 			}
 		}
 
