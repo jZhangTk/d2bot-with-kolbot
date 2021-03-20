@@ -589,7 +589,8 @@ MainSwitch:
 	case 18: // D2 Splash
 		// Single Player screen fix
 		if (getLocation() === 12 && !getControl(4, 626, 100, 151, 44)) {
-			ControlAction.click(6, 33, 572, 128, 35);
+			// ControlAction.click(6, 33, 572, 128, 35);
+			login(me.profile);
 
 			break;
 		}
