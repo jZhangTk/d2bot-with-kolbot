@@ -40,7 +40,7 @@ function LoadConfig() {
 	Scripts.Tristram = false;
 		Config.Tristram.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Pit = true;
+	Scripts.Pit = false;
 		Config.Pit.ClearPit1 = true;
 	Scripts.Treehead = false;
 	Scripts.Smith = false;
@@ -55,7 +55,7 @@ function LoadConfig() {
 	Scripts.Coldworm = false;
 		Config.Coldworm.KillBeetleburst = false;
 		Config.Coldworm.ClearMaggotLair = false; // Clear all 3 levels
-	Scripts.AncientTunnels = true;
+	Scripts.AncientTunnels = false;
 		Config.AncientTunnels.OpenChest = false; // Open special chest in Lost City
 		Config.AncientTunnels.KillDarkElder = false;
 	Scripts.Summoner = false;
@@ -80,7 +80,7 @@ function LoadConfig() {
 	Scripts.Izual = false;
 	Scripts.Hephasto = false;
 	Scripts.Vizier = false; // Intended for classic sorc, kills Vizier only.
-	Scripts.FastDiablo = true;
+	Scripts.FastDiablo = false;
 	Scripts.Diablo = false;
 		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Diablo.Entrance = true; // Start from entrance
@@ -91,9 +91,9 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** act 5 ***
-	Scripts.Pindleskin = false;
+	Scripts.Pindleskin = true;
 		Config.Pindleskin.UseWaypoint = false;
-		Config.Pindleskin.KillNihlathak = true;
+		Config.Pindleskin.KillNihlathak = false;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
 	Scripts.Nihlathak = true;
 		Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
@@ -256,9 +256,9 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [0,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[1] = [0,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[2] = [0,1,1,1,1,1,1,0,0,0];
+	Config.Inventory[0] = [0,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[1] = [0,1,1,1,1,1,0,0,0,0];
+	Config.Inventory[2] = [0,1,1,1,1,1,0,0,0,0];
 	Config.Inventory[3] = [0,1,1,1,1,1,1,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
@@ -326,7 +326,7 @@ function LoadConfig() {
 	Config.LogLowGems = false; // Log low gems (chipped, flawed, normal) on item viewer
 	Config.LogHighGems = false; // Log high gems (flawless, perfect) on item viewer
 	Config.SkipLogging = []; // Custom log skip list. Set as three digit item code or classid. Example: ["tes", "ceh", 656, 657] will ignore logging of essences.
-	Config.ShowCubingInfo = true; // Show cubing messages on console
+	Config.ShowCubingInfo = false; // Show cubing messages on console
 
 	// Repair settings
 	Config.CubeRepair = false; // Repair weapons with Ort and armor with Ral rune. Don't use it if you don't understand the risk of losing items.
