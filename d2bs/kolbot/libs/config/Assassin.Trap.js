@@ -40,7 +40,7 @@ function LoadConfig() {
 	Scripts.Tristram = false;
 		Config.Tristram.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Tristram.PortalLeech = false; // Set to true to open a portal for leechers.
-	Scripts.Pit = true;
+	Scripts.Pit = false;
 		Config.Pit.ClearPit1 = true;
 	Scripts.Treehead = false;
 	Scripts.Smith = false;
@@ -80,7 +80,7 @@ function LoadConfig() {
 	Scripts.Izual = false;
 	Scripts.Hephasto = false;
 	Scripts.Vizier = false; // Intended for classic sorc, kills Vizier only.
-	Scripts.FastDiablo = true;
+	Scripts.FastDiablo = false;
 	Scripts.Diablo = false;
 		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Diablo.Entrance = false; // Start from entrance
@@ -91,16 +91,16 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** act 5 ***
-	Scripts.Pindleskin = false;
+	Scripts.Pindleskin = true;
 		Config.Pindleskin.UseWaypoint = false;
 		Config.Pindleskin.KillNihlathak = false;
 		Config.Pindleskin.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Nihlathak = true;
 		Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Eldritch = false;
-		Config.Eldritch.OpenChest = true;
+		Config.Eldritch.OpenChest = false;
 		Config.Eldritch.KillShenk = true;
-		Config.Eldritch.KillDacFarren = true;
+		Config.Eldritch.KillDacFarren = false;
 	Scripts.Eyeback = false;
 	Scripts.SharpTooth = false;
 	Scripts.ThreshSocket = false;
@@ -256,9 +256,9 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [0,1,1,1,1,0,0,0,0,0];
-	Config.Inventory[1] = [0,1,1,1,1,0,0,0,0,0];
-	Config.Inventory[2] = [0,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[0] = [0,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[1] = [0,1,1,1,0,0,0,0,0,0];
+	Config.Inventory[2] = [0,1,1,1,0,0,0,0,0,0];
 	Config.Inventory[3] = [0,1,1,1,1,0,0,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
@@ -326,7 +326,7 @@ function LoadConfig() {
 	Config.LogLowGems = false; // Log low gems (chipped, flawed, normal) on item viewer
 	Config.LogHighGems = false; // Log high gems (flawless, perfect) on item viewer
 	Config.SkipLogging = []; // Custom log skip list. Set as three digit item code or classid. Example: ["tes", "ceh", 656, 657] will ignore logging of essences.
-	Config.ShowCubingInfo = true; // Show cubing messages on console
+	Config.ShowCubingInfo = false; // Show cubing messages on console
 
 	// Repair settings
 	Config.CubeRepair = false; // Repair weapons with Ort and armor with Ral rune. Don't use it if you don't understand the risk of losing items.
@@ -373,7 +373,7 @@ function LoadConfig() {
 
 	// The gems not used by other recipes will be used for magic item rerolling.
 
-	//Config.Recipes.pus([Recipe.Reroll.Magic, "Diadem"]); // Reroll magic Diadem
+	//Config.Recipes.push([Recipe.Reroll.Magic, "Diadem"]); // Reroll magic Diadem
 	Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
 
 	//Config.Recipes.push([Recipe.Reroll.Rare, "Diadem"]); // Reroll rare Diadem
@@ -429,7 +429,7 @@ function LoadConfig() {
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 1; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 1800; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MaxGameTime = 120; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
@@ -472,7 +472,7 @@ function LoadConfig() {
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
 	// You can combine multiple resists with "and", for example - "fire and cold", "physical and cold and poison"
-	Config.SkipImmune = ["lightning and fire"];
+	Config.SkipImmune = ["lightning", "fire"];
 	// Skip enchanted monsters. Possible options: "extra strong", "extra fast", "cursed", "magic resistant", "fire enchanted", "lightning enchanted", "cold enchanted", "mana burn", "teleportation", "spectral hit", "stone skin", "multiple shots".
 	// You can combine multiple enchantments with "and", for example - "cursed and extra fast", "mana burn and extra strong and lightning enchanted"
 	Config.SkipEnchant = [];
@@ -509,7 +509,7 @@ function LoadConfig() {
 
 	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 15; // Distance to keep from monsters.
-	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
+	Config.DodgeHP = 75; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 
