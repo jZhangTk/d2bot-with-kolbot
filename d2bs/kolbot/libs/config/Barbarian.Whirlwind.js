@@ -48,7 +48,7 @@ function LoadConfig() {
 	Scripts.Countess = false;
 		Config.Countess.KillGhosts = false;
 	Scripts.Andariel = false;
-	Scripts.Cows = false;
+	Scripts.Cows = true;
 
 	// *** act 2 ***
 	Scripts.Radament = false;
@@ -91,11 +91,11 @@ function LoadConfig() {
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** act 5 ***
-	Scripts.Pindleskin = true;
+	Scripts.Pindleskin = false;
 		Config.Pindleskin.UseWaypoint = false;
 		Config.Pindleskin.KillNihlathak = false;
 		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
-	Scripts.Nihlathak = true;
+	Scripts.Nihlathak = false;
 		Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Eldritch = false;
 		Config.Eldritch.OpenChest = true;
@@ -112,7 +112,7 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false;
-	Scripts.Baal = false;
+	Scripts.Baal = true;
 		Config.Baal.HotTPMessage = "Hot TP!";
 		Config.Baal.SafeTPMessage = "Safe TP!";
 		Config.Baal.BaalMessage = "Baal!";
@@ -429,7 +429,7 @@ function LoadConfig() {
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 1; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 900; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MaxGameTime = 600; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
@@ -464,10 +464,10 @@ function LoadConfig() {
 	Config.ViperCheck = false; // Quit if revived Tomb Vipers are sighted
 
 	// DClone config
-	Config.StopOnDClone = true; // Go to town and idle as soon as Diablo walks the Earth
+	Config.StopOnDClone = false; // Go to town and idle as soon as Diablo walks the Earth
 	Config.SoJWaitTime = 0; // Time in minutes to wait for another SoJ sale before leaving game. 0 = disabled
-	Config.KillDclone = false; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
-	Config.DCloneQuit = 1; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
+	Config.KillDclone = true; // Go to Palace Cellar 3 and try to kill Diablo Clone. Pointless if you already have Annihilus.
+	Config.DCloneQuit = 0; // 1 = quit when Diablo walks, 2 = quit on soj sales, 0 = disabled
 
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
