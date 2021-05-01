@@ -36,10 +36,23 @@
 [name] == diadem && [quality] == unique # [passiveltngpierce] >= 20 && [passiveltngmastery] >= 15 // && [plusdefense] >= 200 && [defense] >= 260 // Griffon's Eye
 
 // --Amazon--
+[name] == matriarchalspear && [quality] == unique # [enhanceddamage] >= 280 && [plusdefense] >= 600 && [fireresist] >= 50 && [javelinandspearskilltab] >= 3 // Stoneraven
+[name] == ceremonialpike && [quality] == unique # [enhanceddamage] >= 200 && [lifeleech] >= 9 // Lycander's Flank
+[name] == ceremonialbow && [quality] == unique # [enhanceddamage] >= 200 && [manaleech] >= 8 // Lycander's Aim
+[name] == ceremonialjavelin && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 200 && [lifeleech] >= 9 // Titan's Revenge
+[name] == matriarchaljavelin && [quality] == unique # [enhanceddamage] >= 200 && [javelinandspearskilltab] >= 4 // Thunderstroke
+[name] == matriarchalbow && [quality] == unique # [enhanceddamage] >= 230 && [itemtohitpercent] >= 300 && [bowandcrossbowskilltab] >= 4 // Blood Raven's Charge
 
 // --Assassin--
+[name] == battlecestus && [quality] == unique # [enhanceddamage] >= 220 && [itemmanaafterkill] >= 15 // Shadow Killer
+[name] == battlecestus && [quality] == unique # [enhanceddamage] >= 200 && [lifeleech] >= 9 // Bartuc's Cut-Throat
+[name] == battlecestus && [quality] == unique # [enhanceddamage] >= 240 && [martialartsskilltab] >= 2 && [shadowdisciplinesskilltab] >= 2 && [manaleech] >= 15 && [fireresist] >= 50 // Jade Talon
+[name] == battlecestus && [quality] == unique # [enhanceddamage] >= 270 && [martialartsskilltab] >= 3 && [skillwakeofinferno] >= 2 && [skillwakeoffire] >= 2 && [fireresist] >= 70 // Firelizard's Talons
 
 // --Necromancer--
+[name] == hierophanttrophy && [quality] == unique # [enhanceddefense] >= 200 && [defense] >= 213 // Homunculus
+[name] == bloodlordskull && [quality] == unique # [enhanceddefense] >= 180 && [necromancersummoningskilltab] + [poisonandboneskilltab] + [cursesskilltab] >= 3 && [defense] >= 417 // Darkforce Spawn
+[name] == succubusskull && [quality] == unique # [enhanceddefense] >= 150 && [necromancerskills] >= 3 && [fireresist] >= 30 && [defense] >= 367 // Boneflame
 
 // --Barbarian--
 
@@ -65,7 +78,8 @@
 [name] == casque && [quality] == unique # [itemmagicbonus] >= 50 && [enhanceddefense] >= 240 && [defense] >= 248 // Stealskull
 [name] == basinet && [quality] == unique # [fireresist] >= 40 // Darksight Helm
 [name] == wingedhelm && [quality] == unique # [amazonskills] >= 2 && [itemmanaafterkill] >= 4 && [enhanceddefense] >= 200 // && [defense] >= 297 // Valkyrie Wing
-[name] == deathmask && [quality] == unique # [enhanceddefense] >= 220 && [defense] >= 278 // Blackhorn's Face
+[name] == deathmask && [quality] == unique # [enhanceddefense] >= 220 && [defense] >= 278 && [level] >= 99 // Blackhorn's Face
+[name] == deathmask && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 220 && [defense] >= 278 // Blackhorn's Face
 [name] == grandcrown && [quality] == unique # [lifeleech] >= 12 && [enhanceddefense] >= 200 // && [itemgoldbonus] >= 100 && [defense] >= 342 // Crown of Thieves
 [name] == grimhelm && [quality] == unique # [enhanceddefense] >= 100 && [lifeleech] >= 8 && [manaleech] >= 8 && [damageresist] >= 20 && [magicdamagereduction] >= 15 // Vampire Gaze
 [name] == grimhelm && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 100 && [lifeleech] >= 8 && [manaleech] >= 8 && [damageresist] >= 20 && [magicdamagereduction] >= 15 // Vampire Gaze
@@ -73,18 +87,22 @@
 [name] == cap && [quality] == unique # [defense] >= 19 // Biggin's Bonnet
 [name] == skullcap && [quality] == unique # [itemmagicbonus] >= 50 && [defense] >= 11 // Tarnhelm
 // [name] == helm && [quality] == unique # [defense] >= 28 // Coif of Glory
-[name] == fullhelm && [quality] == unique # [enhanceddefense] >= 50 && [plusdefense] >= 20 && [defense] >= 60 // Duskdeep
-// [name] == greathelm && [quality] == unique # [enhanceddefense] >= 80 // Howltusk
-// [name] == mask && [quality] == unique # [defense] >= 52 // The Face of Horror
+[name] == fullhelm && [quality] == unique # [enhanceddefense] >= 50 && [plusdefense] >= 20 && [defense] >= 60 && [level] >= 99 // Duskdeep
+[name] == fullhelm && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 50 && [plusdefense] >= 20 && [defense] >= 60 // Duskdeep
+[name] == greathelm && [quality] == unique # [enhanceddefense] >= 80 && [level] >= 99 // Howltusk
+[name] == greathelm && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 80 // Howltusk
+// [name] == mask && [quality] == unique # [defense] >= 52 && [level] >= 99 // The Face of Horror
+[name] == mask && [quality] == unique && [flag] == ethereal # [defense] >= 52 && [level] >= 99 // The Face of Horror
 [name] == crown && [quality] == unique # [enhanceddefense] >= 60 && [itemundeadtohit] >= 100 && [defense] >= 113 // Undead Crown
-// [name] == bonehelm && [quality] == unique # [lifeleech] >= 5 && [defense] >= 36 // Wormskull
+[name] == bonehelm && [quality] == unique # [lifeleech] >= 5 && [defense] >= 36 && [level] >= 99 // Wormskull
+[name] == bonehelm && [quality] == unique && [flag] == ethereal # [lifeleech] >= 5 && [defense] >= 36 // Wormskull
 
 // --Armor--
 // Elite
 [name] == duskshroud && [quality] == unique && [flag] != ethereal # [skillblizzard] >= 3 && [passivecoldmastery] >= 15 // && [defense] >= 487 // Ormus' Robes
 [name] == duskshroud && [quality] == unique && [flag] != ethereal # [skillfireball] >= 3 && [passivecoldmastery] >= 15 // && [defense] >= 487 // Ormus' Robes
 [name] == duskshroud && [quality] == unique && [flag] != ethereal # ([skilllightning] == 3 || [skillnova] == 3) && [passivecoldmastery] >= 15 // && [defense] >= 487 // Ormus' Robes
-[name] == wirefleece && [quality] == unique && [flag] != ethereal # [normaldamagereduction] >= 20 && [magicdamagereduction] >= 20 // && [defense] >= 1496 // The Gladiator's Bane
+[name] == wirefleece && [quality] == unique && [flag] != ethereal # [normaldamagereduction] >= 20 && [magicdamagereduction] >= 20 && [defense] >= 1496 // The Gladiator's Bane
 [name] == wirefleece && [quality] == unique && [flag] == ethereal # [normaldamagereduction] >= 20 && [magicdamagereduction] >= 20 && [enhanceddefense] >= 200 // && [defense] >= 1496 * 1.5 // The Gladiator's Bane
 [name] == balrogskin && [quality] == unique && [flag] != ethereal # [itemallskills] >= 2 && [normaldamagereduction] >= 15 && [defense] >= 1450 // Arkaine's Valor
 [name] == balrogskin && [quality] == unique && [flag] == ethereal # [itemallskills] >= 2 && [normaldamagereduction] >= 15 // && [defense] >= 1450 * 1.5 // Arkaine's Valor
@@ -97,23 +115,25 @@
 [name] == sacredarmor && [quality] == unique && [flag] == ethereal # [fireresist] >= 30 // && [strength] >= 30 && [itemdemondamagepercent] >= 100 && [defense] >= 1502 * 1.5 // Tyrael's Might
 // Exceptional
 // [name] == ghostarmor && [quality] == unique # [magicdamagereduction] >= 11 && [level] >= 99 // The Spirit Shroud
+// [name] == ghostarmor && [quality] == unique && [flag] == ethereal # [magicdamagereduction] >= 11 && [level] >= 99 // The Spirit Shroud
 [name] == serpentskinarmor && [quality] == unique # [fireresist] >= 35 && [magicdamagereduction] >= 13 // Skin of the Vipermagi
 [name] == demonhidearmor && [quality] == unique # [lifeleech] >= 7 && [hpregen] >= 25 && [enhanceddefense] >= 190 && [defense] >= 397 // Skin of the Flayed One
 [name] == trellisedarmor && [quality] == unique # [normaldamagereduction] >= 20 && [magicdamagereduction] >= 16 && [enhanceddefense] >= 100 // Iron Pelt
 [name] == tigulatedmail && [quality] == unique # [enhanceddefense] >= 180 // && [defense] >= 534 // Crow Caw
 [name] == linkedmail && [quality] == unique # [enhanceddefense] >= 160 // && [defense] >= 449 // Spirit Forge
-// [name] == cuirass && [quality] == unique # [enhanceddefense] >= 200 // Duriel's Shell
+[name] == cuirass && [quality] == unique # [enhanceddefense] >= 200 && [level] >= 99 // Duriel's Shell
+[name] == cuirass && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 200 && [level] >= 99 // Duriel's Shell
 [name] == mesharmor && [quality] == unique # [enhanceddefense] >= 220 // && [defense] >= 684 // Shaftstop
 [name] == russetarmor && [quality] == unique # [enhanceddefense] >= 200 && [defense] >= 732 // Skullder's Ire
 [name] == mageplate && [quality] == unique # [magicdamagereduction] >= 10 && [enhanceddefense] >= 160 // && [defense] >= 681 // Que-Hegan's Wisdom
 [name] == sharktootharmor && [quality] == unique # [itemattackertakesdamage] >= 40 && [enhanceddefense] >= 220 && [plusdefense] >= 60 // && [defense] >= 888 // Toothrow
 [name] == templarcoat && [quality] == unique # [enhanceddefense] >= 200 // && [defense] >= 825 // Guardian Angel
-[name] == embossedplate && [quality] == unique # [enhanceddefense] >= 160 // Atma's Wail
+[name] == embossedplate && [quality] == unique # [enhanceddefense] >= 160 && [level] >= 99 // Atma's Wail
 [name] == chaosarmor && [quality] == unique # [itemdemondamagepercent] >= 60 && [itemdemontohit] >= 250 && [enhanceddefense] >= 200 // && [defense] >= 1029 // Black Hades
-[name] == ornateplate && [quality] == unique # [enhanceddefense] >= 180 // && [defense] >= 1262 // Corpsemourn
+[name] == ornateplate && [quality] == unique # [enhanceddefense] >= 180 && [defense] >= 1262 && [level] >= 99 // Corpsemourn
 // Normal
-[name] == quiltedarmor && [quality] == unique # [plusdefense] >= 20 // && [defense] >= 31 // Greyform
-[name] == leatherarmor && [quality] == unique # [plusdefense] >= 25 // && [defense] >= 42 // Blinkbat's Form
+[name] == quiltedarmor && [quality] == unique # [plusdefense] >= 20 && [defense] >= 31 && [level] >= 99 // Greyform
+[name] == leatherarmor && [quality] == unique # [plusdefense] >= 25 && [defense] >= 42 // Blinkbat's Form
 [name] == hardleatherarmor && [quality] == unique # [plusdefense] >= 30 && [defense] >= 54 && [level] >= 99 // The Centurion
 [name] == studdedleather && [quality] == unique # [fhr] >= 20 && [defense] >= 60 && [level] >= 99 // Twitchthroe
 [name] == ringmail && [quality] == unique # [enhanceddefense] >= 100 && [defense] >= 98 && [level] >= 99 // Darkglow
@@ -122,11 +142,14 @@
 [name] == chainmail && [quality] == unique # [itemattackertakeslightdamage] >= 14 && [enhanceddefense] >= 85 && [defense] >= 140 && [level] >= 99 // Sparking Mail
 [name] == splintmail && [quality] == unique # [enhanceddefense] >= 80 && [defense] >= 172 && [level] >= 99// Iceblink
 [name] == lightplate && [quality] == unique # [enhanceddefense] >= 100 && [level] >= 99 // Heavenly Garb
-// [name] == fieldplate && [quality] == unique # [enhanceddefense] >= 130 // && [defense] >= 243 // Rockfleece
-[name] == platemail && [quality] == unique # [enhanceddefense] >= 120 // && [defense] >= 257 // Boneflesh
+[name] == fieldplate && [quality] == unique # [enhanceddefense] >= 130 && [defense] >= 243 && [level] >= 99 // Rockfleece
+[name] == fieldplate && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 130 && [defense] >= 243 // Rockfleece
+[name] == platemail && [quality] == unique # [enhanceddefense] >= 120 && [defense] >= 257 && [level] >= 99 // Boneflesh
+[name] == platemail && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 120 && [defense] >= 257 && [level] >= 99 // Boneflesh
 [name] == gothicplate && [quality] == unique # [plusdefense] >= 200 && [defense] >= 335 && [level] >= 99 // Rattlecage
-// [name] == fullplatemail && [quality] == unique # [enhanceddefense] >= 150 // && [defense] >= 405 // Goldskin
-[name] == ancientarmor && [quality] == unique # [enhanceddefense] >= 120 // && [defense] >= 514 // Silks of the Victor
+[name] == fullplatemail && [quality] == unique # [enhanceddefense] >= 150 && [defense] >= 405 && [level] >= 99 // Goldskin
+[name] == fullplatemail && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 150 && [defense] >= 405 // Goldskin
+[name] == ancientarmor && [quality] == unique # [enhanceddefense] >= 120 && [defense] >= 514 // Silks of the Victor
 
 // --Shields--
 // Elite
@@ -138,7 +161,8 @@
 [name] == ward && [quality] == unique # [toblock] >= 30 && [fireresist] >= 40 && [itemabsorbcold] >= 11 // && [defense] >= 478 // Spirit Ward
 // Exceptional
 [name] == defender && [quality] == unique # [enhanceddefense] >= 150 // && [defense] >= 125 // Visceratuant
-[name] == roundshield && [quality] == unique # [enhanceddefense] >= 220 // && [defense] >= 179 // Moser's Blessed Circle
+[name] == roundshield && [quality] == unique # [enhanceddefense] >= 220 && [defense] >= 179 && [level] >= 99 // Moser's Blessed Circle
+[name] == roundshield && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 220 && [defense] >= 179 // Moser's Blessed Circle
 [name] == scutum && [quality] == unique # [enhanceddefense] >= 220 // && [defense] >= 198 // Stormchaser
 [name] == dragonshield && [quality] == unique # [enhanceddefense] >= 200 // && [defense] >= 204 // Tiamat's Rebuke
 [name] == barbedshield && [quality] == unique # [enhanceddefense] >= 120 // && [defense] >= 173 // Lance Guard
@@ -171,6 +195,7 @@
 // [name] == heavygloves && [quality] == unique # [enhanceddefense] >= 20 && [defense] >= 18 // Bloodfist
 [name] == chaingloves && [quality] == unique # [itemmagicbonus] >= 40 && [enhanceddefense] >= 30 && [defense] >= 28 // Chance Guards
 [name] == lightgauntlets && [quality] == unique # [enhanceddefense] >= 30 && [defense] >= 25 && [level] >= 99 // Magefist
+[name] == lightgauntlets && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 30 && [defense] >= 25 // Magefist
 [name] == heavygloves && [quality] == unique # [enhanceddefense] >= 20 && [defense] >= 49 // Frostburn
 
 // --Boots--
@@ -184,13 +209,18 @@
 [name] == sharkskinboots && [quality] == unique # [maxhp] >= 65 && [enhanceddefense] >= 210 && [defense] >= 124 // Waterwalk
 [name] == meshboots && [quality] == unique # [enhanceddefense] >= 190 && [defense] >= 130 // Silkweave
 [name] == battleboots && [quality] == unique # [itemmagicbonus] >= 50 // && [itemattackertakesdamage] >= 10 && [enhanceddefense] >= 190 && [defense] >= 139 // War Traveler
-[name] == warboots && [quality] == unique # [enhanceddefense] >= 200 && [defense] >= 162 // Gore Rider
+[name] == warboots && [quality] == unique # [enhanceddefense] >= 200 && [defense] >= 162 && [level] >= 99 // Gore Rider
+[name] == warboots && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 200 && [defense] >= 162 // Gore Rider
 // Normal
-[name] == boots && [quality] == unique # [enhanceddefense] >= 20 // Hotspur
-// [name] == heavyboots && [quality] == unique # [enhanceddefense] >= 30 && [defense] >= 21 // Gorefoot
+[name] == boots && [quality] == unique # [enhanceddefense] >= 20 && [level] >= 99 // Hotspur
+[name] == boots && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 20 // Hotspur
+[name] == heavyboots && [quality] == unique # [enhanceddefense] >= 30 && [defense] >= 21 && [level] >= 99 // Gorefoot
+[name] == heavyboots && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 30 && [defense] >= 21 // Gorefoot
 [name] == chainboots && [quality] == unique # [enhanceddefense] >= 40 && [defense] >= 26 && [level] >= 99 // Treads of Cthon
+[name] == chainboots && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 40 && [defense] >= 26 // Treads of Cthon
 [name] == lightplatedboots && [quality] == unique # [enhanceddefense] >= 60 && [defense] >= 34 // Goblin Toe
-[name] == greaves && [quality] == unique # [enhanceddefense] >= 80 && [defense] >= 63 // Tearhaunch
+// [name] == greaves && [quality] == unique # [enhanceddefense] >= 80 && [defense] >= 63 && [level] >= 99 // Tearhaunch
+[name] == greaves && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 80 && [defense] >= 63 // Tearhaunch
 
 // --Belts--
 // Elite
@@ -202,35 +232,291 @@
 [name] == sharkskinbelt && [quality] == unique # [enhanceddefense] >= 150 && [defense] >= 107 // Razortail
 [name] == meshbelt && [quality] == unique # [enhanceddefense] >= 150 && [defense] >= 102 // Gloom's Trap
 [name] == battlebelt && [quality] == unique # [enhanceddefense] >= 170 && [defense] >= 116 // Snowclash
-[name] == warbelt && [quality] == unique # [enhanceddefense] >= 200 && [defense] >= 159 // Thundergod's Vigor
+[name] == warbelt && [quality] == unique # [enhanceddefense] >= 200 && [defense] >= 159 && [level] >= 99 // Thundergod's Vigor
+[name] == warbelt && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 200 && [defense] >= 159 // Thundergod's Vigor
 // Normal
 [name] == sash && [quality] == unique # [maxmana] >= 15 // Lenymo
-[name] == lightbelt && [quality] == unique # [enhanceddefense] >= 30 && [defense] >= 15 // Snakecord
+[name] == lightbelt && [quality] == unique # [enhanceddefense] >= 30 && [defense] >= 15 && [level] >= 99 // Snakecord
+[name] == lightbelt && [quality] == unique && [flag] == ethereal # [enhanceddefense] >= 30 && [defense] >= 15 // Snakecord
 [name] == belt && [quality] == unique # [enhanceddefense] >= 50 && [defense] >= 24 // Nightsmoke
 [name] == heavybelt && [quality] == unique # [itemgoldbonus] >= 80 && [enhanceddefense] >= 60 && [defense] >= 36 // Goldwrap
-[name] == belt && [quality] == unique # [enhanceddefense] >= 100 && [defense] >= 54 // Bladebuckle
+[name] == platedbelt && [quality] == unique # [enhanceddefense] >= 100 && [defense] >= 54 // Bladebuckle
 
 // --Axes--
+// Elite
+[name] == tomahawk && [quality] == unique # [enhanceddamage] >= 225 // Razor's Edge
+[name] == ettinaxe && [quality] == unique # [enhanceddamage] >= 270 && [sockets] >= 5 // Rune Master
+[name] == warspike && [quality] == unique # [enhanceddamage] >= 300 && [itemmagicbonus] >= 50 // Cranebeak
+[name] == berserkeraxe && [quality] == unique # [enhanceddamage] >= 280 && [itemhealafterkill] >= 9 // Death Cleaver
+[name] == silveredgedaxe && [quality] == unique # [enhanceddamage] >= 180 && [itemdemondamagepercent] >= 200 && [tohit] >= 350 && [itemabsorbfire] >= 12 && [itemhealafterdemonkill] >= 10 // Ethereal Edge
+[name] == decapitator && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Hellslayer (level 16-20 Fireball)
+[name] == decapitator && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // Hellslayer (level 16-20 Fireball)
+[name] == championaxe && [quality] == unique # [enhanceddamage] >= 200 // Messerschmidt's Reaver
+[name] == gloriousaxe && [quality] == unique # [enhanceddamage] >= 290 // Executioner's Justice
+// Exceptional
+[name] == hatchet && [quality] == unique # [enhanceddamage] >= 190 // Coldkill
+[name] == cleaver && [quality] == unique # [enhanceddamage] >= 200 // Butcher's Pupil
+[name] == twinaxe && [quality] == unique # [enhanceddamage] >= 190 // Islestrike
+[name] == crowbill && [quality] == unique # [enhanceddamage] >= 170 && [level] >= 99 // Pompeii's Wrath
+[name] == crowbill && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 170 // Pompeii's Wrath
+[name] == naga && [quality] == unique # [enhanceddamage] >= 180 // Guardian Naga
+[name] == militaryaxe && [quality] == unique # [enhanceddamage] >= 175 && [level] >= 99 // Warlord's Trust
+[name] == militaryaxe && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 175 // Warlord's Trust
+[name] == beardedaxe && [quality] == unique # [magicdamagereduction] >= 15 && [level] >= 99 // Spellsteel
+[name] == beardedaxe && [quality] == unique && [flag] == ethereal # [magicdamagereduction] >= 15 // Spellsteel
+[name] == tabar && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Stormrider (level 13-20 charged bolt)
+[name] == tabar && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // Stormrider (level 13-20 charged bolt)
+[name] == gothicaxe && [quality] == unique # [enhanceddamage] >= 220 // Boneslayer Blade (level 12-20 holy bolt)
+[name] == ancientaxe && [quality] == unique # [enhanceddamage] >= 200 && [strength] >= 20 // The Minotaur
+// Normal
+[name] == handaxe && [quality] == unique # [enhanceddamage] >= 70 // The Gnasher
+[name] == axe && [quality] == unique # [enhanceddamage] >= 70 // Deathspade
+[name] == doubleaxe && [quality] == unique # [enhanceddamage] >= 50 // Bladebone
+[name] == militarypick && [quality] == unique # [enhanceddamage] >= 100 && [lightmaxdam] >= 15 && [tohit] >= 100 // Skull Splitter
+[name] == waraxe && [quality] == unique # [enhanceddamage] >= 150 // Rakescar
+[name] == largeaxe && [quality] == unique # [enhanceddamage] >= 90 // Axe of Fechmar
+[name] == broadaxe && [quality] == unique # [enhanceddamage] >= 50 // Goreshovel
+[name] == battleaxe && [quality] == unique # [fireresist] >= 20 && [level] >= 99 // The Chieftain
+[name] == battleaxe && [quality] == unique && [flag] == ethereal # [fireresist] >= 20 // The Chieftain
+[name] == greataxe && [quality] == unique # [enhanceddamage] >= 80 && [manaleech] >= 13 // Brainhew
+[name] == giantaxe && [quality] == unique # [enhanceddamage] >= 120 && [plusmaxdamage] >= 25 && [strength] >= 30 // Humongous
 
 // --Bows--
+// Elite
+[name] == crusaderbow && [quality] == unique # [enhanceddamage] >= 200 && [level] >= 99 // Eaglehorn
+[name] == wardbow && [quality] == unique # [enhanceddamage] >= 200 && [skillguidedarrow] >= 5 // Widowmaker
+[name] == hydrabow && [quality] == unique # [manaleech] >= 8 // Windforce
+// Exceptional
+[name] == edgebow && [quality] == unique # [enhanceddamage] >= 200 && [level] >= 99 // Skystrike
+[name] == razorbow && [quality] == unique # [enhanceddamage] >= 220 && [lifeleech] >= 10 // Riphook
+[name] == cedarbow && [quality] == unique # [enhanceddamage] >= 180 && [level] >= 99 // Kuko Shakaku
+[name] == doublebow && [quality] == unique # [enhanceddamage] >= 220 && [skillstrafe] >= 5 // Endlesshail
+[name] == shortsiegebow && [quality] == unique # [enhanceddamage] >= 170 && [level] >= 99 // Witchwild String
+[name] == largesiegebow && [quality] == unique # [enhanceddamage] >= 230 && [plusmindamage] >= 10 && [plusmaxdamage] >= 30 // Cliffkiller
+[name] == runebow && [quality] == unique # [enhanceddamage] >= 150 && [tohit] >= 250 && [magicdamagereduction] >= 13 // Magewrath
+[name] == gothicbow && [quality] == unique # [enhanceddamage] >= 250 && [itemdemondamagepercent] >= 200 && [itemundeaddamagepercent] >= 200 && [itemtohitpercent] >= 150 // Goldstrike Arch
+// Normal
+[name] == shortbow && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Pluckeye
+[name] == hunter'sbow && [quality] == unique # [enhanceddamage] >= 50 // Witherstring
+[name] == longbow && [quality] == unique # [enhanceddamage] >= 70 && [level] >= 99 // Raven Claw
+[name] == compositebow && [quality] == unique # [enhanceddamage] >= 60 && [level] >= 99 // Rogue's Bow
+[name] == shortbattlebow && [quality] == unique # [enhanceddamage] >= 90 // Stormstrike
+[name] == longbattlebow && [quality] == unique # [enhanceddamage] >= 80 && [tohit] >= 100 // Wizendraw
+[name] == shortwarbow && [quality] == unique # [enhanceddamage] >= 90 && [firemaxdam] >= 50 && [tohit] >= 75 // Hellclap
+[name] == longwarbow && [quality] == unique # [enhanceddamage] >= 130 // Blastbark
 
 // --Crossbows--
 
 // --Daggers--
+// Elite
+[name] == boneknife && [quality] == unique # [fcr] >= 50 && [level] >= 99 // Wizardspike
+[name] == boneknife && [quality] == unique && [flag] == ethereal # [fcr] >= 50 // Wizardspike
+[name] == fangedknife && [quality] == unique # [enhanceddamage] >= 300 // Fleshripper
+[name] == legendspike && [quality] == unique # [enhanceddamage] >= 240 && [manaleech] >= 15 // Ghostflame
+// Exceptional
+[name] == poignard && [quality] == unique # [enhanceddamage] >= 240 && [level] >= 99 // Spineripper
+[name] == poignard && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 240 // Spineripper
+[name] == rondel && [quality] == unique # [enhanceddamage] >= 240 // Heart Carver
+[name] == cinquedeas && [quality] == unique # [ias] >= 30 && [level] >= 99 // Blackbog's Sharp
+[name] == cinquedeas && [quality] == unique && [flag] == ethereal # [ias] >= 30 // Blackbog's Sharp
+[name] == stiletto && [quality] == unique # [enhanceddamage] >= 150 && [level] >= 99 // Stormspike
+[name] == stiletto && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 150 // Stormspike
+// Normal
+[name] == dagger && [quality] == unique # [itemmagicbonus] >= 100 && [level] >= 99 // Gull
+[name] == dagger && [quality] == unique && [flag] == ethereal # [itemmagicbonus] >= 100 // Gull
+[name] == dirk && [quality] == unique # [enhanceddamage] >= 50 && [level] >= 99 // The Diggler
+[name] == dirk && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 50 // The Diggler
+[name] == kris && [quality] == unique # [tohit] >= 150 // The Jade Tan Do
+[name] == blade && [quality] == unique # [fcr] >= 50 && [level] >= 99 // Spectral Shard
+[name] == blade && [quality] == unique && [flag] == ethereal # [fcr] >= 50 // Spectral Shard
+
+// --Javelins--
+// Elite
+[name] == balrogspear && [quality] == unique # [enhanceddamage] >= 210 && [lifeleech] >= 12 // Demon's Arch
+[name] == ghostglaive && [quality] == unique # [enhanceddamage] >= 190 && [lifeleech] >= 13 // Wraith Flight
+[name] == wingedharpoon && [quality] == unique # [enhanceddamage] >= 230 && [lifeleech] >= 15 // Gargoyle's Bite
 
 // --Maces--
+// Elite
+[name] == truncheon && [quality] == unique # [enhanceddamage] >= 330 && [itemfreeze] >= 4 && [itemabsorbcoldpercent] >= 15 && [itemtohitpercent] >= 180 // Nord's Tenderizer
+[name] == tyrantclub && [quality] == unique # [enhanceddamage] >= 230 && [lifeleech] >= 13 && [fireresist] >= 20 // Demon Limb
+[name] == devilstar && [quality] == unique # [enhanceddamage] >= 200 && [level] >= 99 // Baranar's Star
+[name] == devilstar && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 200 // Baranar's Star
+[name] == scourge && [quality] == unique # [enhanceddamage] >= 280 // Horizon's Tornado
+[name] == scourge && [quality] == unique # [enhanceddamage] >= 300 && [itemabsorblight] >= 9 // Stormlash
+[name] == legendarymallet && [quality] == unique # [enhanceddamage] >= 320 && [strength] >= 30 && [itemnormaldamage] >= 30 // && [level] >= 99 // Stone Crusher
+[name] == legendarymallet && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 320 && [strength] >= 30 && [itemnormaldamage] >= 30 // && [level] >= 99 // Stone Crusher
+[name] == legendarymallet && [quality] == unique # [enhanceddamage] >= 130 && [lightresist] >= 75 // Schaefer's Hammer
+[name] == ogremaul && [quality] == unique # [enhanceddamage] >= 230 // Windhammer
+[name] == thundermaul && [quality] == unique # [enhanceddamage] >= 300 // Earth Shifter
+[name] == thundermaul && [quality] == unique # [enhanceddamage] >= 240 // The Cranium Basher
+// Exceptional
+[name] == cudgel && [quality] == unique # [itemtohitpercent] >= 25 && [level] >= 99 // Dark Clan Crusher
+[name] == cudgel && [quality] == unique && [flag] == ethereal # [itemtohitpercent] >= 25 // Dark Clan Crusher
+[name] == barbedclub && [quality] == unique # [enhanceddamage] >= 200 // Fleshrender
+[name] == flangedmace && [quality] == unique # [enhanceddamage] >= 180 // Sureshrill Frost
+[name] == jaggedstar && [quality] == unique # [enhanceddamage] >= 150 && [magicdamagereduction] >= 12 // Moonfall
+[name] == knout && [quality] == unique # [enhanceddamage] >= 200 // Baezil's Vortex
+[name] == battlehammer && [quality] == unique # [enhanceddamage] >= 180 && [level] >= 99 // Earthshaker
+[name] == battlehammer && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 180 // Earthshaker
+[name] == warclub && [quality] == unique # [enhanceddamage] >= 220 // Bloodtree Stump
+[name] == marteldefer && [quality] == unique # [enhanceddamage] >= 160 // The Gavel Of Pain
+// Normal
+[name] == club && [quality] == unique # [enhanceddamage] >= 80 // Felloak
+[name] == spikedclub && [quality] == unique # [itemattackertakesdamage] >= 10 && [level] >= 99 // Stoutnail
+[name] == spikedclub && [quality] == unique && [flag] == ethereal # [itemattackertakesdamage] >= 10 // Stoutnail
+[name] == mace && [quality] == unique # [enhanceddamage] >= 60 // Crushflange
+[name] == morningstar && [quality] == unique # [enhanceddamage] >= 120 && [level] >= 99 // Bloodrise
+[name] == morningstar && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 120 // Bloodrise
+[name] == flail && [quality] == unique # [enhanceddamage] >= 60 && [level] >= 99 // The General's Tan Do Li Ga
+[name] == flail && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 60 // The General's Tan Do Li Ga
+[name] == warhammer && [quality] == unique # [enhanceddamage] >= 150 // Ironstone
+[name] == maul && [quality] == unique # [enhanceddamage] >= 300 // Bonesnap
+[name] == greatmaul && [quality] == unique # [enhanceddamage] >= 250 // Steeldriver
 
 // --Polearms--
+// Elite
+[name] == ogreaxe && [quality] == unique # [enhanceddamage] >= 320 && [level] >= 99 // Bonehew
+[name] == ogreaxe && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 320 // Bonehew
+[name] == thresher && [quality] == unique # [enhanceddamage] >= 240 && [lifeleech] >= 15 // && [level] >= 99 // The Reaper's Toll
+[name] == thresher && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 240 && [lifeleech] >= 15 // The Reaper's Toll
+[name] == crypticaxe && [quality] == unique # [enhanceddamage] >= 280 && [itemundeaddamagepercent] >= 230 && [itemundeadtohit] >= 350 && [fireresist] >= 50 && [itemhealafterkill] >= 14 && [itemmagicbonus] >= 80 && [sockets] >= 3 // Tomb Reaver
+[name] == crypticaxe && [quality] == unique && [flag] == ethereal # [sockets] >= 3 // Tomb Reaver
+[name] == giantthresher && [quality] == unique # [enhanceddamage] >= 250 // Stormspire
+// Exceptional
+[name] == lochaberaxe && [quality] == unique # [enhanceddamage] >= 200 // The Meat Scraper
+[name] == bill && [quality] == unique # [enhanceddamage] >= 140 && [level] >= 99 // Blackleach Blade
+[name] == bill && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 140 // Blackleach Blade
+[name] == battlescythe && [quality] == unique # [enhanceddamage] >= 180 && [druidskills] >= 3 // Athena's Wrath
+[name] == partizan && [quality] == unique # [enhanceddamage] >= 220 && [tohit] >= 200 // Pierre Tombale Couant
+[name] == becdecorbin && [quality] == unique # [enhanceddamage] >= 200 && [tohit] >= 250 // Husoldal Evo
+[name] == grimscythe && [quality] == unique # [enhanceddamage] >= 180 && [tohit] >= 250 // Grim's Burning Dead
+// Normal
+[name] == bardiche && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Dimoak's Hew
+[name] == bardiche && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // Dimoak's Hew
+[name] == voulge && [quality] == unique # [enhanceddamage] >= 80 && [level] >= 99 // Steelgoad
+[name] == voulge && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 80 // Steelgoad
+[name] == scythe && [quality] == unique # [enhanceddamage] >= 90 && [level] >= 99 // Soul Harvest
+[name] == scythe && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 90 // Soul Harvest
+[name] == poleaxe && [quality] == unique # [enhanceddamage] >= 70 && [tohit] >= 100 // The Battlebranch
+[name] == halberd && [quality] == unique # [enhanceddamage] >= 40 && [level] >= 99 // Woestave
+// [name] == halberd && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 40 // Woestave
+[name] == warscythe && [quality] == unique # [enhanceddamage] >= 20 && [level] >= 99 // The Grim Reaper
+[name] == warscythe && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 20 // The Grim Reaper
 
 // --Scepters--
+// Elite
+[name] == mightyscepter && [quality] == unique # [enhanceddamage] >= 300 && [itemhealafterkill] >= 20 && [paladinskills] >= 3 && [sockets] >= 2 // Heaven's Light
+[name] == mightyscepter && [quality] == unique # [enhanceddamage] >= 300 && [itemnormaldamage] >= 120 && [itemdemondamagepercent] >= 250 && [skillredemption] >= 4 && [skillholybolt] >= 4 // The Redeemer
+[name] == caduceus && [quality] == unique # [enhanceddamage] >= 290 && [itemnormaldamage] >= 85 && [normaldamagereduction] >= 7 && [palicombatskilltab] >= 4 && [itemtohitpercent] >= 200 // Astreon's Iron Ward
+// Exceptional
+[name] == runescepter && [quality] == unique # [enhanceddamage] >= 220 // Zakarum's Hand
+[name] == holywatersprinkler && [quality] == unique # [enhanceddamage] >= 190 && [tohit] >= 200 // The Fetid Sprinkler
+[name] == divinescepter && [quality] == unique # [enhanceddamage] >= 160 // Hand of Blessed Light
+// Normal
+[name] == scepter && [quality] == unique # [enhanceddamage] >= 80 // Knell Striker
+[name] == grandscepter && [quality] == unique # [enhanceddamage] >= 60 && [itemundeaddamagepercent] >= 110 && [skillvengeance] >= 3 // Rusthandle
+[name] == warscepter && [quality] == unique # [enhanceddamage] >= 120 && [skillresistlightning] >= 5 // Stormeye
 
 // --Spears--
+// Elite
+[name] == hyperionspear && [quality] == unique # [enhanceddamage] >= 230 && [itemallskills] >= 4 // Arioc's Needle
+[name] == mancatcher && [quality] == unique # [enhanceddamage] >= 240 && [tohit] >= 250 && [poisonresist] >= 50 // Viperfork
+[name] == warpike && [quality] == unique # [enhanceddamage] >= 260 && [enhanceddefense] >= 80 // Steel Pillar
+// Exceptional
+[name] == warspear && [quality] == unique # [enhanceddamage] >= 170 // The Impaler
+[name] == fuscina && [quality] == unique # [enhanceddamage] >= 180 // Kelpie Snare
+[name] == warfork && [quality] == unique # [enhanceddamage] >= 190 && [tohit] >= 250 // Soulfeast Tine
+[name] == yari && [quality] == unique # [enhanceddamage] >= 200 // Hone Sundan
+[name] == lance && [quality] == unique # [enhanceddamage] >= 200 && [level] >= 99 // Spire of Honor
+[name] == lance && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 200 // Spire of Honor
+// Normal
+[name] == spear && [quality] == unique # [tohit] >= 35 && [level] >= 99 // The Dragon Chang
+[name] == spear && [quality] == unique && [flag] == ethereal # [tohit] >= 35 // The Dragon Chang
+[name] == trident && [quality] == unique # [enhanceddamage] >= 50 // Razortine
+[name] == brandistock && [quality] == unique # [enhanceddamage] >= 70 && [lifeleech] >= 12 // Bloodthief
+// [name] == spetum && [quality] == unique # [ias] >= 40 && [level] >= 99 // Lance of Yaggai
+[name] == spetum && [quality] == unique && [flag] == ethereal # [ias] >= 40 && [level] >= 99 // Lance of Yaggai
+[name] == pike && [quality] == unique # [enhanceddamage] >= 100 // The Tannr Gorerod
 
 // --Staves--
+// Elite
+[name] == elderstaff && [quality] == unique # [itemallskills] >= 4 && [plusdefense] >= 550 && [energy] >= 50 && [magicdamagereduction] >= 5 // Ondal's Wisdom
+[name] == archonstaff && [quality] == unique # [itempierceltng] >= 15 && [itempiercecold] >= 15 && [itempiercefire] >= 15 // Mang Song's Lesson
+// Exceptional
+[name] == jostaff && [quality] == unique # [fcr] >= 30 && [level] >= 99 // Razorswitch
+[name] == jostaff && [quality] == unique && [flag] == ethereal # [fcr] >= 30 // Razorswitch
+[name] == quarterstaff && [quality] == unique # [enhanceddamage] >= 300 // Ribcracker
+[name] == cedarstaff && [quality] == unique # [itemmaxhppercent] >= 25 && [fireresist] >= 40 // Chromatic Ire
+[name] == gothicstaff && [quality] == unique # [itemaddsorceressskills] >= 3 && [level] >= 99 // Warpspear
+[name] == gothicstaff && [quality] == unique && [flag] == ethereal # [itemaddsorceressskills] >= 3 // Warpspear
+[name] == runestaff && [quality] == unique # [itemallskills] >= 2 // Skull Collector
+// Normal
+[name] == shortstaff && [quality] == unique # [enhanceddamage] >= 60 // Bane Ash
+[name] == longstaff && [quality] == unique # [enhanceddamage] >= 40 // Serpent Lord
+[name] == gnarledstaff && [quality] == unique # [itemaddsorceressskills] >= 1 && [level] >= 99 // Spire of Lazarus
+[name] == gnarledstaff && [quality] == unique && [flag] == ethereal # [itemaddsorceressskills] >= 1 // Spire of Lazarus
+[name] == battlestaff && [quality] == unique # [fireresist] >= 30 && [level] >= 99 // The Salamander
+[name] == battlestaff && [quality] == unique && [flag] == ethereal # [fireresist] >= 30 // The Salamander
+[name] == warstaff && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // The Iron Jang Bong
+[name] == warstaff && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // The Iron Jang Bong
 
 // --Swords--
+// Elite
+[name] == ataghan && [quality] == unique # [enhanceddamage] >= 240 && [itemdemondamagepercent] >= 150 && [manaleech] >= 6 && [itemabsorblight] >= 7 && [itemdemontohit] >= 300 && [sockets] >= 2 // Djinn Slayer
+[name] == elegantblade && [quality] == unique # [enhanceddamage] >= 260 && [lifeleech] >= 15 && [itemhealafterkill] >= 13 // Bloodmoon
+[name] == phaseblade && [quality] == unique # [enhanceddamage] >= 200 && [manaleech] >= 7 // Lightsabre (level 14-20 chain lightning)
+[name] == phaseblade && [quality] == unique # [enhanceddamage] >= 270 && [strength] >= 10 && [sanctuaryaura] >= 13 // Azurewrath
+[name] == crypticsword && [quality] == unique # [enhanceddamage] >= 230 && [skillarcticblast] >= 10 && [itemabsorbcold] >= 15 // Frostwind
+[name] == balrogblade && [quality] == unique # [enhanceddamage] >= 240 && [skillinferno] >= 18 && [strength] >= 20 && [vitality] >= 10 && [itemabsorbfirepercent] >= 30 // Flamebellow
+[name] == championsword && [quality] == unique # [enhanceddamage] >= 250 && [lifeleech] >= 7 // Doombringer
+[name] == colossusblade && [quality] == unique # [enhanceddamage] >= 250 // The Grandfather
+// Exceptional
+[name] == gladius && [quality] == unique # [skillwhirlwind] >= 3 && [skillswordmastery] >= 4 // Bloodletter
+[name] == cutlass && [quality] == unique # [enhanceddamage] >= 250 // Coldsteel Eye
+[name] == shamshir && [quality] == unique # [enhanceddamage] >= 160 // Hexfire
+[name] == tulwar && [quality] == unique # [enhanceddamage] >= 120 && [dexterity] >= 15 // Blade Of Ali Baba
+[name] == dimensionalblade && [quality] == unique # [enhanceddamage] >= 150 && [magicdamagereduction] >= 12 // Ginther's Rift
+[name] == battlesword && [quality] == unique # [enhanceddamage] >= 150 // Headstriker
+[name] == runesword && [quality] == unique # [enhanceddamage] >= 150 && [level] >= 99 // Plague Bearer
+[name] == runesword && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 150 // Plague Bearer
+[name] == ancientsword && [quality] == unique # [enhanceddamage] >= 250 // The Atlantean
+[name] == espandon && [quality] == unique # [enhanceddamage] >= 200 // Crainte Vomir
+[name] == dacianfalx && [quality] == unique # [enhanceddamage] >= 160 // Bing Sz Wang
+[name] == tusksword && [quality] == unique # [enhanceddamage] >= 200 // The Vile Husk
+[name] == gothicsword && [quality] == unique # [enhanceddamage] >= 200 // Cloudcrack
+[name] == zweihander && [quality] == unique # [enhanceddamage] >= 160 // Todesfaelle Flamme
+[name] == executionersword && [quality] == unique # [enhanceddamage] >= 180 && [fireresist] >= 20 // Swordguard
+// Normal
+[name] == shortsword && [quality] == unique # [enhanceddamage] >= 100 // Rixot's Keen
+[name] == scimitar && [quality] == unique # [enhanceddamage] >= 80 // Blood Crescent
+[name] == sabre && [quality] == unique # [enhanceddamage] >= 50 && [level] >= 99 // Skewer of Krintiz
+[name] == sabre && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 50 // Skewer of Krintiz
+[name] == falchion && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Gleamscythe
+[name] == falchion && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // Gleamscythe
+[name] == broadsword && [quality] == unique # [enhanceddamage] >= 120 && [firemindam] >= 12 && [firemaxdam] >= 25 // Griswold's Edge
+[name] == longsword && [quality] == unique # [enhanceddamage] >= 80 && [level] >= 99 // Hellplague
+[name] == longsword && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 80 // Hellplague
+[name] == warsword && [quality] == unique # [enhanceddamage] >= 80 // Culwen's Point
+[name] == twohandedsword && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Shadowfang
+[name] == twohandedsword && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // Shadowfang
+[name] == claymore && [quality] == unique # [enhanceddamage] >= 100 && [manaleech] >= 10 && [level] >= 99 // Soulflay
+[name] == claymore && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 && [manaleech] >= 10 // Soulflay
+[name] == giantsword && [quality] == unique # [enhanceddamage] >= 100 && [tohit] >= 150 && [firemaxdam] >= 40 // Kinemil's Awl
+[name] == bastardsword && [quality] == unique # [enhanceddamage] >= 60 && [level] >= 99 // Blacktongue
+[name] == bastardsword && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 60 // Blacktongue
+[name] == flamberge && [quality] == unique # [enhanceddamage] >= 100 && [level] >= 99 // Ripsaw
+[name] == flamberge && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 100 // Ripsaw
+[name] == greatsword && [quality] == unique # [enhanceddamage] >= 120 // The Patriarch
 
 // --Throwing Weapons--
+// Elite
+[name] == wingedknife && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 250 // Warshrike
+[name] == flyingaxe && [quality] == unique # [enhanceddamage] >= 210 // Gimmershred
+[name] == wingedaxe && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 210 // Lacerator
+// Exceptional
+[name] == battledart && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 180 && [tohit] >= 450 && [lifeleech] >= 9 && [manaleech] >= 6 // Deathbit
+[name] == francisca && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 200 && [manaleech] >= 6 // The Scalper
 
 // --Wands--
 // Elite
@@ -238,14 +524,19 @@
 [name] == unearthedwand && [quality] == unique # [passivepoispierce] >= 50 && [poisonandboneskilltab] >= 2 && [itemhealafterkill] >= 12 && [itemmanaafterkill] >= 12 // Death's Web
 // Exceptional
 [name] == burntwand && [quality] == unique # [fcr] >= 50 && [level] >= 99 // Suicide Branch
+[name] == burntwand && [quality] == unique && [flag] == ethereal # [fcr] >= 50 // Suicide Branch
 [name] == petrifiedwand && [quality] == unique # [necromancersummoningskilltab] >= 2 && [level] >= 99 // Carin Shard
-[name] == tombwand && [quality] == unique # [fcr] >= 10 // Arm of King Leoric
-[name] == gravewand && [quality] == unique # [fcr] >= 30 // Blackhand Key
+[name] == petrifiedwand && [quality] == unique && [flag] == ethereal # [necromancersummoningskilltab] >= 2 // Carin Shard
+[name] == tombwand && [quality] == unique # [fcr] >= 10 && [level] >= 99 // Arm of King Leoric
+[name] == tombwand && [quality] == unique && [flag] == ethereal # [fcr] >= 10 // Arm of King Leoric
+[name] == gravewand && [quality] == unique # [fcr] >= 30 && [level] >= 99 // Blackhand Key
+[name] == gravewand && [quality] == unique && [flag] == ethereal # [fcr] >= 30 // Blackhand Key
 // Normal
 [name] == wand && [quality] == unique # [energy] >= 10 // Torch of Iro
-[name] == yewwand && [quality] == unique # [skillironmaiden] >= 3 && [skillamplifydamage] >= 3 && [skillterror] >= 3 [skillcorpseexplosion] >= 3 // Maelstrom
+[name] == yewwand && [quality] == unique # [skillironmaiden] >= 3 && [skillamplifydamage] >= 3 && [skillterror] >= 3 && [skillcorpseexplosion] >= 3 // Maelstrom
 [name] == bonewand && [quality] == unique # [mana] >= 50 // Gravenspine
 [name] == grimwand && [quality] == unique # [fcr] >= 20 && [level] >= 99 // Ume's Lament
+[name] == grimwand && [quality] == unique && [flag] == ethereal # [fcr] >= 20 // Ume's Lament
 
 
 // =====Set=====
@@ -311,7 +602,7 @@
 
 // --Tal Rasha's Wrappings--
 // [name] == swirlingcrystal && [quality] == set # [skillfiremastery] >= 2 && [skilllightningmastery] >=2 && [skillcoldmastery] >=2
-[name] == deathmask && [quality] == set # [fireresist] >= 15 && [defense] >= 131
+[name] == deathmask && [quality] == set # [fireresist] >= 15 && [defense] >= 131 && [level] >= 99
 [name] == lacqueredplate && [quality] == set # [itemmagicbonus] == 88 && [defense] >= 941
 [name] == meshbelt && [quality] == set # [itemmagicbonus] >= 15 && [defense] >= 40
 [name] == amulet && [quality] == set # [sorceressskills] >= 2 && [level] >= 99
@@ -321,7 +612,7 @@
 [name] == chaosarmor && [quality] == set # [enhanceddefense] >= 150 && [level] >= 99
 [name] == cantortrophy && [quality] == set # [fireresist] >= 45 && [defense] >= 189
 [name] == trollbelt && [quality] == set # [maxmana] >= 50 && [defense] >= 166
-[name] == heavybracers && [quality] == set # [fcr] >= 20 && [defense] >= 74
+[name] == heavybracers && [quality] == set # [fcr] >= 20 && [defense] >= 74 && [level] >= 99
 
 
 // =====Rare=====
@@ -349,10 +640,28 @@
 [type] == circlet && [quality] == rare # [barbarianskills] >= 2 && [sockets] >= 2
 
 // --Amazon--
+[type] == amazonspear && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 225 && [itemtohitperlevel] > 0 || [enhanceddamage] >= 400
+[type] == amazonjavelin && [quality] == rare && [flag] == ethereal # ([enhanceddamage] >= 225 && [itemtohitperlevel] > 0 || [enhanceddamage] >= 400) && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
+[type] == amazonbow && [quality] == rare # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && ([ias] >= 20 || [sockets] >= 2)
+([name] == maidenjavelin || [name] == ceremonialjavelin || [name] == matriarchaljavelin) && [quality] == rare && [flag] != ethereal # [javelinandspearskilltab] + [amazonskills] >= 4 && [ias] >= 30
 
 // --Assassin--
+([name] >= handscythe && [name] <= scissorssuwayyah) && [quality] == rare # [assassinskills] + [skilllightningsentry] >= 5 && ([itemtohitperlevel] > 0 || [ias] >= 30 || [sockets] >= 2)
+([name] == greatertalons || [name] == runictalons) && [quality] == rare # [assassinskills] + [skilllightningsentry] >= 5
+([name] == greaterclaws || [name] == feralclaws) && [quality] == rare # [assassinskills] + [skilllightningsentry] >= 5 && [ias] >= 10
+([name] == greatertalons || [name] == runictalons) && [quality] == rare # ([skillvenom] >= 3 || [skilllightningsentry] >= 3 || [skillweaponblock] >= 3) && [itemtohitperlevel] > 0 && [ias] >= 30
+([name] == greaterclaws || [name] == feralclaws) && [quality] == rare # ([skillvenom] >= 3 || [skilllightningsentry] >= 3 || [skillweaponblock] >= 3) && [itemtohitperlevel] > 0 && [ias] >= 40
+([name] == bladetalons || [name] == greatertalons || [name] == runictalons) && [quality] == rare # [itemtohitperlevel] > 0 && [ias] >= 30 && [sockets] >= 2
+([name] == claws || [name] == greaterclaws || [name] == feralclaws) && [quality] == rare # [itemtohitperlevel] > 0 && [ias] >= 40 && [sockets] >= 2
+([name] == bladetalons || [name] == greatertalons || [name] == runictalons) && [quality] == rare # [enhanceddamage] >= 225 && [itemtohitperlevel] > 0 && [ias] >= 30
+([name] == claws || [name] == greaterclaws || [name] == feralclaws) && [quality] == rare # [enhanceddamage] >= 225 && [itemtohitperlevel] > 0 && [ias] >= 40
+([type] == handtohand || [type] == assassinclaw) && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 225 && [itemtohitperlevel] > 0 || [enhanceddamage] >= 400
 
 // --Necromancer--
+[type] == voodooheads && [quality] == rare # [necromancerskills] + [poisonandboneskilltab] + [skillbonespear] + [skillbonespirit] >= 8
+[type] == voodooheads && [quality] == rare # [necromancerskills] + [skillbonespear] >= 5 && [fbr] >= 30 && [sockets] >= 2
+[type] == voodooheads && [quality] == rare # [necromancerskills] + [skillbonespirit] >= 5 && [fbr] >= 30 && [sockets] >= 2
+[type] == voodooheads && [quality] == rare # [necromancerskills] + [skillpoisonnova] >= 5 && [fbr] >= 30 && [sockets] >= 2
 
 // --Barbarian--
 
@@ -363,7 +672,6 @@
 // --Paladin--
 
 // --Helms--
-// kolton
 [type] == helm && [quality] == rare # [itemtohitpercentperlevel] >= 1 && [sockets] == 2 && [enhanceddefense] >= 150
 [type] == helm && [quality] == rare && [flag] == ethereal # [itemtohitpercentperlevel] >= 1 && [enhanceddefense] >= 100 && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0 || [sockets] == 2)
 
@@ -387,26 +695,44 @@
 // --Belts--
 
 // --Axes--
+[type] == axe && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
 
 // --Bows--
+[type] == bow && [quality] == rare # [enhanceddamage] >= 400 && ([ias] >= 20 || [sockets] >= 2)
 
 // --Crossbows--
 
 // --Daggers--
+[type] == knife && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+([name] == kris || [name] == cinquedeas || [name] == fangedknife) && [quality] == rare # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && [ias] >= 40 && [sockets] == 2
+
+// --Javelins--
+[type] == javelin && [quality] == rare && [flag] == ethereal # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
 
 // --Maces--
+[type] == mace && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
 
 // --Polearms--
+[type] == polearm && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
 
 // --Scepters--
+[type] == scepter && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == scepter && [quality] == rare # [skillblessedhammer] + [skillconcentration] + [palicombatskilltab] + [paladinskills] >= 8
+[type] == scepter && [quality] == rare # [skillfistoftheheavens] + [skillconviction] + [palicombatskilltab] + [paladinskills] >= 8
+[type] == scepter && [quality] == rare # [skillholyshield] + [paladinskills] + [palicombatskilltab] >= 5
 
 // --Spears--
+[type] == spear && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
 
 // --Staves--
 
 // --Swords--
+[type] == sword && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+([name] == scimitar || [name] == cutlass || [name] == ataghan) && [quality] == rare # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && [ias] >= 40 && [sockets] >= 2
 
 // --Throwing Weapons--
+[type] == throwingknife && [quality] == rare && [flag] == ethereal # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
+[type] == throwingaxe && [quality] == rare && [flag] == ethereal # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
 
 // --Wands--
 [type] == wand && [quality] == rare # [skillbonespear] + [skillbonespirit] >= 6 && ([necromancerskills] >= 2 || [poisonandboneskilltab] >= 2) && [fcr] >= 20
@@ -428,6 +754,7 @@
 // --Charms--
 // grand
 // [name] == grandcharm && [quality] == magic && [level] >= 91
+[name] == grandcharm && [quality] == magic # ([palicombatskilltab] + [fireskilltab] + [coldskilltab] + [lightningskilltab] + [trapsskilltab] + [martialartsskilltab] + [javelinandspearskilltab] + [bowandcrossbowskilltab] + [poisonandboneskilltab] + [necromancersummoningskilltab] + [elementalskilltab] + [druidsummoningskilltab] + [shapeshiftingskilltab] + [barbcombatskilltab] >= 1) && ([maxhp] >= 40 || [strength] + [dexterity] >= 6 || [fhr] >= 12 || [frw] >= 7)
 // large
 // small
 [name] == smallcharm && [quality] == magic # [itemmagicbonus] >= 7
@@ -444,10 +771,20 @@
 [type] == circlet && [quality] == magic # [barbarianskills] >= 2
 
 // --Amazon--
+([name] == maidenjavelin || [name] == ceremonialjavelin || [name] == matriarchaljavelin) && [quality] == magic && [flag] != ethereal # [javelinandspearskilltab] + [amazonskills] >= 4 && [ias] >= 30
 
 // --Assassin--
+([name] == greatertalons || [name] == runictalons) && [quality] == magic # [assassinskills]+[skilllightningsentry] == 5 || [trapsskilltab]+[skilllightningsentry] == 6
+([name] == greatertalons || [name] == runictalons) && [quality] == magic # [itemtohitperlevel] >= 15 && [ias] >= 30 && ([skilllightningsentry] == 3 || [skillvenom] == 3 || [skillweaponblock] >= 3)
+([name] == greaterclaws || [name] == feralclaws) && [quality] == magic # ([assassinskills]+[skilllightningsentry] == 5 || [trapsskilltab]+[skilllightningsentry] == 6) && [ias] >= 10
+([name] == greaterclaws || [name] == feralclaws) && [quality] == magic # [itemtohitperlevel] >= 15 && [ias] >= 40 && ([skilllightningsentry] == 3 || [skillvenom] == 3 || [skillweaponblock] >= 3)
+([name] >= handscythe && [name] <= scissorssuwayyah) && [quality] == magic # [shadowdisciplinesskilltab] == 3 && ([skillvenom] == 3 || [skillfade] == 3)
 
 // --Necromancer--
+[type] == voodooheads && [quality] == magic # [necromancerskills] + [poisonandboneskilltab] + [skillbonespear] + [skillbonespirit] >= 8
+[type] == voodooheads && [quality] == magic # ([necromancerskills] + [skillbonespear] >= 5 || [poisonandboneskilltab] + [skillbonespear] >= 6) && [fbr] >= 30
+[type] == voodooheads && [quality] == magic # ([necromancerskills] + [skillbonespirit] >= 5 || [poisonandboneskilltab] + [skillbonespirit] >= 6) && [fbr] >= 30
+[type] == voodooheads && [quality] == magic # ([necromancerskills] + [skillpoisonnova] >= 5 || [poisonandboneskilltab] + [skillpoisonnova] >= 6) && [fbr] >= 30
 
 // --Barbarian--
 
@@ -458,7 +795,6 @@
 // --Paladin--
 
 // --Helms--
-// kolton
 [type] == helm && [quality] == magic && [class] == elite # [itemtohitpercentperlevel] >= 1 && ([fhr] >= 10 || [maxhp] >= 30)
 
 // --Armor--
@@ -489,11 +825,15 @@
 
 // --Daggers--
 
+// --Javelins--
+
 // --Maces--
 
 // --Polearms--
 
 // --Scepters--
+[type] == scepter && [quality] == magic # ([palicombatskilltab] >= 3 || [paladinskills] >= 2) && ([skillblessedhammer] + [skillconcentration] >= 6 || [skillfistoftheheavens] + [skillconviction] >= 6 || [skillholyshield] >= 3)
+([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] == magic # [sockets] >= 4 && [skillconcentration] + [skillblessedhammer] >= 6
 
 // --Spears--
 
@@ -521,10 +861,14 @@
 [name] == diadem && [quality] <= superior && [flag] != ethereal # [enhanceddefense] >= 15 && ([itemmaxdurabilitypercent] == 0 || [itemmaxdurabilitypercent] >= 15) && [sockets] == 3
 
 // --Amazon--
+([name] == matriarchalbow || [name] == grandmatronbow) && [quality] == superior # [bowandcrossbowskilltab] >= 3 && [enhanceddamage] >= 15 && ([sockets] == 3 || [sockets] == 4) // && [tohit] >= 3
 
 // --Assassin--
+([name] == greatertalons || [name] == runictalons) && [quality] <= superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) && ([skillvenom] >= 3 || [skilllightningsentry] >= 3) && ([skillmindblast] >= 1 || [skilldragonflight] >= 1) && ([skillbladeshield] >= 1 || [skillweaponblock] >= 1 || [skillshadowmaster] >= 1)
+([name] == suwayyah || [name] == feralclaws) && [quality] <= superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3) && ([skillvenom] >= 3 || [skilllightningsentry] >= 3) && ([skillmindblast] >= 1 || [skilldragonflight] >= 1) && ([skillbladeshield] >= 1 || [skillweaponblock] >= 1 || [skillshadowmaster] >= 1)
 
 // --Necromancer--
+[type] == voodooheads && [quality] <= superior && [flag] != ethereal # [skillbonespirit] + [skillbonespear] >= 6 && [sockets] != 1
 
 // --Barbarian--
 
@@ -542,16 +886,16 @@
 
 // --Armor--
 // Elite
-[name] == archonplate && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [defense] >= 524
-[name] == duskshroud && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [defense] >= 467
-([name] == duskshroud || [name] == archonplate) && [quality] == superior && [flag] != ethereal # ([sockets] == 3 || [sockets] == 4) && [enhanceddefense] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [itemmaxdurabilitypercent] == 0)
+// [name] == archonplate && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [defense] >= 524
+// [name] == duskshroud && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [defense] >= 467
+([name] == duskshroud || [name] == archonplate) && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddefense] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [itemmaxdurabilitypercent] == 0)
 [name] == sacredarmor && [quality] == normal && [flag] == ethereal # [sockets] == 0 // && [defense] >= 600 * 1.5
 ([name] == archonplate || [name] == sacredarmor) && [quality] == normal && [flag] == ethereal # [sockets] == 0 && [defense] >= 700
 [type] == armor && [quality] == normal && [class] == elite && [flag] == ethereal # [sockets] == 0 && [defense] >= 750
 [type] == armor && [quality] == normal && [class] == elite && [flag] == ethereal # [sockets] == 0 && [defense] >= 1000
 // Exceptional
 // [name] == mageplate && [quality] <= superior && [flag] != ethereal # [sockets] == 3 && [defense] >= 261
-[name] == mageplate && [quality] == superior && [flag] != ethereal # [sockets] == 3 && [enhanceddefense] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [itemmaxdurabilitypercent] == 0)
+[name] == mageplate && [quality] == superior && [flag] != ethereal # [sockets] >= 3 && [enhanceddefense] >= 15 && ([itemmaxdurabilitypercent] >= 15 || [itemmaxdurabilitypercent] == 0)
 
 // --Shields--
 [name] == monarch && [quality] <= superior # [sockets] == 4 && [defense] >= 148 # [maxquantity] == 1
@@ -570,42 +914,57 @@
 
 // --Axes--
 // [name] == doubleaxe && [quality] <= superior # [sockets] == 5 # [maxquantity] == 1 // Beast Rune Word
-([name] == berserkeraxe || [name] == ettinaxe) && [quality] == superior # [enhanceddamage] >= 15 && [sockets] >= 4
-([name] == berserkeraxe || [name] == ettinaxe) && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] >= 4
-// ([name] == berserkeraxe || [name] == ettinaxe) && [quality] <= superior && [flag] == ethereal # ([sockets] >= 4 || [sockets] == 0)
+([name] == berserkeraxe || [name] == ettinaxe) && [quality] == superior # [enhanceddamage] >= 15 && [sockets] >= 3
+// ([name] == berserkeraxe || [name] == ettinaxe) && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] >= 3
+[name] == smallcrescent && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] == 4
+[name] == warspike && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] == 5
+[name] == gloriousaxe && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] == 5
+[name] == decapitator && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] == 5
 
 // --Bows--
 // [name] == greatbow && [quality] <= superior # [sockets] == 4 # [maxquantity] == 1 // Ice Rune Word
 [name] == greatbow && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] == 4 // Ice Rune Word
-([name] == matriarchalbow || [name] == grandmatronbow) && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] == 4 // Ice Rune Word
+([name] == diamondbow || [name] == shadowbow || [name] == crusaderbow || [name] == wardbow) && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] == 4
+[name] == hydrabow && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && ([sockets] == 4 || [sockets] == 6)
 
 // --Crossbows--
 
 // --Daggers--
 
+// --Javelins--
+
 // --Maces--
+([name] == flail || [name] == scourge) && [quality] == superior # [sockets] == 4 && [enhanceddamage] >= 15 && [tohit] >= 3 // Heart of the Oak
 
 // --Polearms--
 // ([name] == thresher || [name] == giantthresher) && [quality] == normal && [flag] == ethereal # [sockets] == 0
-([name] == thresher || [name] == giantthresher) && [quality] == superior && [flag] == ethereal # [sockets] >= 3
-([name] == greatpoleaxe || [name] == giantthresher) && [quality] <= superior && [flag] == ethereal # [sockets] == 6
+// ([name] == thresher || [name] == giantthresher) && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] >= 3
+// ([name] == greatpoleaxe || [name] == giantthresher) && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && [sockets] == 6
+[type] == polearm && [quality] == superior && [flag] == ethereal && [class] == elite # [enhanceddamage] >= 15 && [sockets] >= 3
 
 // --Scepters--
+([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # ([sockets] == 0 || [sockets] == 4 || [sockets] == 5) && ([skillblessedhammer] + [skillconcentration] >= 6 || [skillfistoftheheavens] + [skillconviction] >= 6)
+([name] == caduceus || [name] == divinescepter || [name] == warscepter) && [quality] <= superior # ([sockets] == 0 || [sockets] == 5) && [skillholyshield] >= 3
+[name] == caduceus && [quality] <= superior && [flag] != ethereal # ([sockets] == 0 || [sockets] == 3 || [sockets] == 5) && [skillzeal] + [skillfanaticism] >= 6
 
 // --Spears--
+([name] == warpike || [name] == ghostspear) && [quality] == superior && [flag] == ethereal # [enhanceddamage] >= 15 && ([sockets] == 0 || [sockets] == 6)
 
 // --Staves--
+[name] == archonstaff && [quality] == superior && [flag] == ethereal # [enhanceddamage] == 15 && ([sockets] == 0 || [sockets] == 6)
+([name] == gnarledstaff || [name] == battlestaff || [name] == cedarstaff || [name] == gothicstaff || [name] == elderstaff || [name] == shillelagh) && [quality] <= superior # [skillenergyshield] == 3 && ([skillchillingarmor] > 0 || [skillshiverarmor] > 0) && ([sockets] == 0 || [sockets] == 4)
+// ([name] == warstaff || [name] == runestaff || [name] == archonstaff) && [quality] <= superior # [skillenergyshield] == 3 && [sockets] == 5
 
 // --Swords--
 [name] == phaseblade && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] >= 3
-[name] == crystalsword && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] >= 3
-// [name] == crystalsword && [quality] <= superior # [sockets] == 5
+([name] == crystalsword || [name] == dimensionalblade) && [quality] == superior # [enhanceddamage] >= 15 && [tohit] >= 3 && [sockets] >= 3
+// [name] == crystalsword && [quality] == superior # [sockets] == 5
 
 // --Throwing Weapons--
 
 // --Wands--
 [type] == wand && [name] != burntwand && [name] != wand && [name] != yewwand && [quality] <= superior # [skillbonespear] + [skillbonespirit] >= 6 && [sockets] != 1
-[type] == wand && [name] != burntwand && [name] != wand && [name] != yewwand && [quality] <= superior # [skillpoisonnova] >= 3 && [sockets] != 1
+// [type] == wand && [name] != burntwand && [name] != wand && [name] != yewwand && [quality] <= superior # [skillpoisonnova] >= 3 && [sockets] != 1
 
 
 // =====Misc=====
