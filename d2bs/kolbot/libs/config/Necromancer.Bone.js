@@ -48,7 +48,7 @@ function LoadConfig() {
 	Scripts.Countess = false;
 		Config.Countess.KillGhosts = true;
 	Scripts.Andariel = false;
-	Scripts.Cows = false;
+	Scripts.Cows = true;
 
 	// *** act 2 ***
 	Scripts.Radament = false;
@@ -81,7 +81,7 @@ function LoadConfig() {
 	Scripts.Hephasto = false;
 	Scripts.Vizier = false; // Intended for classic sorc, kills Vizier only.
 	Scripts.FastDiablo = false;
-	Scripts.Diablo = true;
+	Scripts.Diablo = false;
 		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Diablo.Entrance = false; // Start from entrance
 		Config.Diablo.SealWarning = "Leave the seals alone!";
@@ -94,7 +94,7 @@ function LoadConfig() {
 	Scripts.Pindleskin = false;
 		Config.Pindleskin.UseWaypoint = false;
 		Config.Pindleskin.KillNihlathak = false;
-		Config.Pindleskin.ViperQuit = false; // End script if Tomb Vipers are found.
+		Config.Pindleskin.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Nihlathak = false;
 		Config.Nihlathak.ViperQuit = true; // End script if Tomb Vipers are found.
 	Scripts.Eldritch = false;
@@ -112,7 +112,7 @@ function LoadConfig() {
 	Scripts.Snapchip = false;
 		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false;
-	Scripts.Baal = false;
+	Scripts.Baal = true;
 		Config.Baal.HotTPMessage = "Hot TP!";
 		Config.Baal.SafeTPMessage = "Safe TP!";
 		Config.Baal.BaalMessage = "Baal!";
@@ -429,7 +429,7 @@ function LoadConfig() {
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
 	Config.MinGameTime = 1; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 900; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MaxGameTime = 600; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.TeleSwitch = false; // Switch to secondary (non-primary) slot when teleporting more than 5 nodes.
 	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
@@ -507,8 +507,8 @@ function LoadConfig() {
 	};
 
 	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
-	Config.DodgeRange = 10; // Distance to keep from monsters.
-	Config.DodgeHP = 100; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
+	Config.DodgeRange = 15; // Distance to keep from monsters.
+	Config.DodgeHP = 75; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 	Config.TeleStomp = true; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
